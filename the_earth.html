@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Earth - Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Chun Sin Ying</strong> <span>Portfolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html#banner">Home</a></li>
+							<li><a href="index.html#project">Projects</a></li>
+							<li><a href="index.html#resume">Resume</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="index.html#contact" class="button fit">Contact Me</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- Content Header -->
+							<section id="content-header">
+								<div class="inner">
+									<header class="major">
+										<h1>The Earth</h1>
+									</header>
+									<p><b><i>THE EARTH</i></b> is a location-based native Android 2D game that allows multiple users to interact with each other.</p>
+								
+									<ul class="actions">
+										<li><a href="#introduction" class="button scrolly">Introduction</a></li>
+										<li><a href="#technical" class="button scrolly">Technical Components</a></li>
+										<li><a href="#detail" class="button scrolly">Game Details</a></li>
+										<li><a href="#business" class="button scrolly">Business Values</a></li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Introduction -->
+							<section id="introduction">
+								<div class="inner">
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<div class="container">
+												<iframe src="https://www.youtube.com/embed/guiufN9KvCo"
+														class="video" frameborder="0" allowfullscreen></iframe>
+											</div>
+										</div>
+										<div class="col-6 col-12-small">
+											<br>
+											<header class="major">
+												<h3>Introduction</h3>
+											</header>
+											<p>The Earth is a country simulation game, which players can build their own army. The Earth also encourage players to step out and explore the world. While exploring around, the system will search for the nearby players and campsites within a fixed search range. Some interaction can be carried out when players have other players or campsites nearby, that is having transaction with other users so as to gain money, and also fight against with other player’s campsite.</p>
+										</div>
+									</div>	
+								</div>
+							</section>
+
+							<!-- Technical Components -->
+								<section id="technical">
+									<div class="inner">
+										<header class="major">
+											<h3>Technical Components</h3>
+										</header>
+									</div>
+									<section id="project" class="tiles">
+										<article>
+											<span class="image">
+												<img src="images/pic09.jpg" alt="" />
+											</span>
+											<header class="major">
+												<h3>Engine</h3>
+												<h5><em>Android Studio with Java language</em> is used to build a native Android game.</h5>
+											</header>
+										</article>
+										<article>
+											<span class="image">
+												<img src="images/pic09.jpg" alt="" />
+											</span>
+											<header class="major">
+												<h3>Server Support</h3>
+												<h5><em>Firebase - Cloud Firestore</em> is used to store the users’ information, such as username, password, current location, money owned, and other information related to the campsite. Therefore, the game is identifying the users by account-based.</h5>
+											</header>
+										</article>
+										<article>
+											<span class="image">
+												<img src="images/pic09.jpg" alt="" />
+											</span>
+											<header class="major">
+												<h3>Google Map</h3>
+												<h5><em>API for implementing Google Map</em> is integrated in the project. It is used to display the location of other users’ campsite, and current location of the user, with <em>customized cluster marker and information window</em> is used.</h5>
+											</header>
+										</article>
+										<article>
+											<span class="image">
+												<img src="images/pic09.jpg" alt="" />
+											</span>
+											<header class="major">
+												<h3>Location Services</h3>
+												<h5><em>Location services</em> is used to get user’s current location, so as to explore the nearby users for interaction of the game.</h5>
+											</header>
+										</article>
+										<article>
+											<span class="image">
+												<img src="images/pic09.jpg" alt="" />
+											</span>
+											<header class="major">
+												<h3>Local Storage</h3>
+												<h5><em>SharedPreferences</em> is used to store the user login session, so as to keep the user signed in after the first time.</h5>
+											</header>
+										</article>
+										<article>
+											<span class="image">
+												<img src="images/pic09.jpg" alt="" />
+											</span>
+											<header class="major">
+												<h3>Service & Multimedia</h3>
+												<h5><em>Service</em> is used for playing the background music, and a short <em>video</em> is added for the splash screen.</h5>
+											</header>
+										</article>
+									</section>
+								</section>
+
+								<!-- Game Details -->
+									<section id="detail">
+										<div class="inner">
+											<header class="major">
+												<h3>Game Details</h3>
+											</header>
+											<ol>
+												<li>Register for / Login to an account</li>
+												<br>
+												<li>Buy soldiers to build the army with initialized money ($10000)</li>
+												<br>
+												<li>Walk around and explore for nearby (within 500m distance) users and campsites</li>
+												<br>
+												<li>Carry out transactions with nearby users
+													<ul>
+														<li>Both users involved in the transaction will gain money with random amount from 0 to 50</li>
+														<li>Low return rate but no risk</li>
+													</ul>
+												</li>
+												<li>Fight against nearby campsites
+													<ul>
+														<li>Users may lose or win some soldiers to or from the opponent, the result is decided by some randomization based on the number of soldiers that the user and the opponent have</li>
+														<li>High return rate but at the same time high risk</li>
+													</ul>
+												</li>
+											</ol>
+										</div>
+									</section>
+
+									<!-- Business Values -->
+										<section id="business">
+											<div class="inner">
+												<header class="major">
+													<h3>Business Values</h3>
+												</header>
+												<p>Since this project is a very short project, the development is not completed and there are rooms to have further development along by idea direction.</p>
+												<p>For example:</p>
+												<ul>
+													<li>More types of soldier for users</li>
+													<li>Buildings and infrastructure can also be available for users to build their stronghold</li>
+													<li>More complicated transaction ways and fighting scenes for users’ interaction</li>
+												</ul>
+											</div>
+										</section>
+
+					</div>
+
+					<!-- Footer -->
+						<footer id="footer">
+							<div class="inner">
+								<!-- <ul class="icons">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								</ul> -->
+								<ul class="copyright">
+									<li>&copy; Chun Sin Ying</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+						</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
