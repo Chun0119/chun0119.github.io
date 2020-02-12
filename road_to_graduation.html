@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>The Earth - Projects</title>
+		<title>Road to Graduation - Projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -44,14 +44,15 @@
 							<section id="content-header">
 								<div class="inner">
 									<header class="major">
-										<h1>The Earth</h1>
+										<h1>Road to Graduation</h1>
 									</header>
-									<p><b><i>THE EARTH</i></b> is a native Android location-based 2D game that allows multiple users to interact with each other.</p>
+									<p><b><i>ROAD TO GRADUATION</i></b> a PC 2D platformer simulation game built by Unity for users to experience all stages of university life.</p>
 								
 									<ul class="actions">
 										<li><a href="#introduction" class="button scrolly">Introduction</a></li>
 										<li><a href="#technical" class="button scrolly">Technical Components</a></li>
 										<li><a href="#detail" class="button scrolly">Game Details</a></li>
+										<li><a href="#team" class="button scrolly">Team</a></li>
 										<li><a href="#future" class="button scrolly">Future Development</a></li>
 									</ul>
 								</div>
@@ -63,7 +64,7 @@
 									<div class="row">
 										<div class="col-6 col-12-small">
 											<div class="container">
-												<iframe src="https://www.youtube.com/embed/guiufN9KvCo"
+												<iframe src="https://www.youtube.com/embed/sE1aBRvYGvE"
 														class="video" frameborder="0" allowfullscreen></iframe>
 											</div>
 										</div>
@@ -72,7 +73,7 @@
 											<header class="major">
 												<h3>Introduction</h3>
 											</header>
-											<p>The Earth is a country simulation game, which players can build their own army. The Earth also encourage players to step out and explore the world. While exploring around, the system will search for the nearby players and campsites within a fixed search range. Some interaction can be carried out when players have other players or campsites nearby, that is having transaction with other users so as to gain money, and also fight against with other player’s campsite.</p>
+											<p>Road to Graduation is a university simulation game, which players are one of the students in the university. It aims to provide gamified learning for students to encourage learning in a more interesting, engaging and effective way. Throughout the course of the game, players need to attempt quizzes, combat with monsters, learn skills and raise all kinds of abilities to survive in different stages of university life.</p>
 										</div>
 									</div>	
 								</div>
@@ -92,7 +93,7 @@
 											</span>
 											<header class="major">
 												<h3>Engine</h3>
-												<h5><em>Android Studio with Java language</em> is used to build a native Android game.</h5>
+												<h5><em>Unity with C# language</em> is used to build a PC game.</h5>
 											</header>
 										</article>
 										<article>
@@ -100,8 +101,8 @@
 												<img src="images/pic09.jpg" alt="" />
 											</span>
 											<header class="major">
-												<h3>Server Support</h3>
-												<h5><em>Firebase - Cloud Firestore</em> is used to store the users’ information, such as username, password, current location, money owned, and other information related to the campsite. Therefore, the game is identifying the users by account-based.</h5>
+												<h3>Third Person Controls</h3>
+												<h5>Controlling the movement of characters and launching skills through different keyboard inputs. These actions have smooth <em>animations created by sprite sheets</em> so as to provide better aesthetics.</h5>
 											</header>
 										</article>
 										<article>
@@ -109,8 +110,8 @@
 												<img src="images/pic09.jpg" alt="" />
 											</span>
 											<header class="major">
-												<h3>Google Map</h3>
-												<h5><em>API for implementing Google Map</em> is integrated in the project. It is used to display the location of other users’ campsite, and current location of the user, with <em>customized cluster marker and information window</em> is used.</h5>
+												<h3>Monsters with AI</h3>
+												<h5>Monsters with <em>auto pathfinding system</em> have been implemented to combat with players. Different distractions and obstacles have also been designed to slow down the movement of players or block their paths.</h5>
 											</header>
 										</article>
 										<article>
@@ -118,8 +119,8 @@
 												<img src="images/pic09.jpg" alt="" />
 											</span>
 											<header class="major">
-												<h3>Location Services</h3>
-												<h5><em>Location services</em> is used to get user’s current location, so as to explore the nearby users for interaction of the game.</h5>
+												<h3>Quizzes</h3>
+												<h5>Quiz interface has been incorporated for players to answer knowledge-based questions, so as to unlock different skills, get ability points and trigger different storylines.</h5>
 											</header>
 										</article>
 										<article>
@@ -127,8 +128,8 @@
 												<img src="images/pic09.jpg" alt="" />
 											</span>
 											<header class="major">
-												<h3>Local Storage</h3>
-												<h5><em>SharedPreferences</em> is used to store the user login session, so as to keep the user signed in after the first time.</h5>
+												<h3>Inventory & Equipment</h3>
+												<h5><em>Inventory system and equipment closet</em> are constructed for storing and equipping with various items. There is also a <em>shop</em> for buying new items.</h5>
 											</header>
 										</article>
 										<article>
@@ -136,8 +137,8 @@
 												<img src="images/pic09.jpg" alt="" />
 											</span>
 											<header class="major">
-												<h3>Service & Multimedia</h3>
-												<h5><em>Service</em> is used for playing the background music, and a short <em>video</em> is added for the splash screen.</h5>
+												<h3>Skills & Abilities</h3>
+												<h5><em>Combats skills</em> have been added such that players could engage into more captivating battles. Furthermore, players could increase different types of <em>abilities like defense and speed</em> to enhance their survivability.</h5>
 											</header>
 										</article>
 									</section>
@@ -150,27 +151,68 @@
 												<h3>Game Details</h3>
 											</header>
 											<ol>
-												<li>Register for / Login to an account</li>
+												<li>Talk with Non-player Character (NPC) and answer quizzes</li>
 												<br>
-												<li>Buy soldiers to build the army with initialized money ($10000)</li>
+												<li>Use ability points to enhance abilities, engage into battles with monsters and prevent getting hindered by distractions</li>
 												<br>
-												<li>Walk around and explore for nearby (within 500m distance) users and campsites</li>
+												<li>Participate in internship program, satisfy the requirements of client and create your own storyline as different answers will result in different outcomes</li>
 												<br>
-												<li>Carry out transactions with nearby users
-													<ul>
-														<li>Both users involved in the transaction will gain money with random amount from 0 to 50</li>
-														<li>Low return rate but no risk</li>
-													</ul>
-												</li>
-												<li>Fight against nearby campsites
-													<ul>
-														<li>Users may lose or win some soldiers to or from the opponent, the result is decided by some randomization based on the number of soldiers that the user and the opponent have</li>
-														<li>High return rate but at the same time high risk</li>
-													</ul>
-												</li>
+												<li>Complete the Final Year Project (FYP) by locating necessary resources and defeating the boss professor</li>
 											</ol>
 										</div>
 									</section>
+
+									<!-- Team -->
+										<section id="team">
+											<div class="inner">
+												<header class="major">
+													<h3>Team</h3>
+												</header>
+												<div class="table-wrapper">
+														<table class="alt">
+															<thead>
+																<tr>
+																	<th>Name</th>
+																	<th>Role</th>
+																	<th>Responsibility</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Chun Sin Ying (Me)</td>
+																	<td>Engineer</td>
+																	<td>To develop the game in Unity</td>
+																</tr>
+																<tr>
+																	<td>Leung Ho Pong James</td>
+																	<td>Engineer</td>
+																	<td>To develop the game in Unity</td>
+																</tr>
+																<tr>
+																	<td>Lin Yi-Chieh</td>
+																	<td>UI Designer</td>
+																	<td>To provide all the graphics for the User Interface (UI) and characters</td>
+																</tr>
+																<tr>
+																	<td>Lee Claudia Simone</td>
+																	<td>Game Designer</td>
+																	<td>To design the storylines, mechanics and the flow of the game</td>
+																</tr>
+																<tr>
+																	<td>Lo Cheuk Yin</td>
+																	<td>Audio Expert</td>
+																	<td>To provide all the audios, including background music and sound effects</td>
+																</tr>
+																<tr>
+																	<td>Leung Nga Chi</td>
+																	<td>Video Expert</td>
+																	<td>To edit the demo video</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+											</div>
+										</section>
 
 									<!-- Future Development -->
 										<section id="future">
@@ -178,12 +220,12 @@
 												<header class="major">
 													<h3>Future Development</h3>
 												</header>
-												<p>Since this project is a very short (2 weeks) course project, a simple implementation or a prototype was expected. However, there may be further development in later stages.</p>
+												<p>Road to Graduation is made for the project of a course about gamification which is not specifically for Computer Science student, a game design or a prototype was expected. Our team decided to use what we good at to build the prototype, however, there may be further development in later stages.</p>
 												<p>For example:</p>
 												<ul>
-													<li>More types of soldier</li>
-													<li>Buildings and infrastructure can also be available to build their stronghold</li>
-													<li>More complicated transaction ways and fighting scenes for users’ interaction</li>
+													<li>More types of monsters</li>
+													<li>Larger and more diversified virtual map for players to navigate and explore</li>
+													<li>Knowledged-based questions and characters built for different majors and faculties in university</li>
 												</ul>
 											</div>
 										</section>
