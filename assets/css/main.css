@@ -2226,6 +2226,30 @@ input, select, textarea {
 		height: 0;
 		padding-bottom: 56.25%;
 	}
+
+	.image_container {
+		height: auto;
+		padding-bottom: 0px;
+	}
+
+	.image_container img {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.icon_container {
+		height: auto;
+		padding-bottom: 0px;
+		width: 20%;
+		float: right;
+	}
+
+	.icon_container img {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
 	
 	.video {
 		position: absolute;
@@ -2762,7 +2786,7 @@ input, select, textarea {
 			padding: 4em 4em 2em 4em ;
 			background-position: center;
 			background-repeat: no-repeat;
-			background-size: cover;
+			background-size: contain;
 			cursor: default;
 			height: 40vh;
 			max-height: 40em;
@@ -2775,10 +2799,14 @@ input, select, textarea {
 			.tiles article .image {
 				display: none;
 			}
-
+			
 			.tiles article header {
 				position: relative;
 				z-index: 3;
+			}
+			
+			.tiles article:hover header {
+				display: none;
 			}
 
 			.tiles article h3 {
@@ -2809,7 +2837,7 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 1;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
@@ -3159,6 +3187,22 @@ input, select, textarea {
 			}
 
 		}
+
+/* Flexbox */
+
+	.flexbox {
+		display: flex;
+		flex-wrap: wrap;
+		width:100%
+	}
+	.flexbox a {
+		border-bottom: none;
+	}
+	.flexitem {
+		justify-content: flex-start;
+		margin: 1em 0 0 1em;
+		vertical-align: middle;	
+	}
 
 /* Header */
 
