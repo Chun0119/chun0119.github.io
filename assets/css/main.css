@@ -2218,7 +2218,7 @@ input, select, textarea {
 
 			}
 
-/* Video */
+/* Multmedia Container */
 
 	.container {
 		position: relative;
@@ -2227,25 +2227,25 @@ input, select, textarea {
 		padding-bottom: 56.25%;
 	}
 
-	.image_container {
+	.image-container {
 		height: auto;
 		padding-bottom: 0px;
 	}
 
-	.image_container img {
+	.image-container img {
 		width: 80%;
 		display: block;
 		margin: 0 auto;
 	}
 
-	.icon_container {
+	.icon-container {
 		height: auto;
 		padding-bottom: 0px;
 		width: 20%;
 		float: right;
 	}
 
-	.icon_container img {
+	.icon-container img {
 		width: 100%;
 		display: block;
 		margin: 0 auto;
@@ -3730,6 +3730,171 @@ input, select, textarea {
 				}
 
 		}
+
+/* Drift Bottle Banner */
+
+	#drift-bottle-banner {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		background-image: url("../../images/drift_bottle_banner.jpg");
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		padding: 6em 0 2em 0 ;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: 0 !important;
+		cursor: default;
+		height: 60vh;
+		margin-bottom: -3.25em;
+		max-height: 32em;
+		min-height: 22em;
+		position: relative;
+		top: -3.25em;
+	}
+
+	#drift-bottle-banner:after {
+		-moz-transition: opacity 2.5s ease;
+		-webkit-transition: opacity 2.5s ease;
+		-ms-transition: opacity 2.5s ease;
+		transition: opacity 2.5s ease;
+		-moz-transition-delay: 0.75s;
+		-webkit-transition-delay: 0.75s;
+		-ms-transition-delay: 0.75s;
+		transition-delay: 0.75s;
+		pointer-events: none;
+		background-color: #242943;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0.85;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	#drift-bottle-banner > .inner {
+		-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
+		-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
+		-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+		transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
+		padding: 0 !important;
+		position: relative;
+		z-index: 2;
+	}
+
+	#drift-bottle-banner.major {
+		height: 75vh;
+		min-height: 30em;
+		max-height: 50em;
+	}
+
+		#drift-bottle-banner.major.alt {
+			opacity: 0.75;
+		}
+
+	#drift-bottle-banner.style1:after {
+		background-color: #6fc3df;
+	}
+
+	#drift-bottle-banner.style2:after {
+		background-color: #8d82c4;
+	}
+
+	#drift-bottle-banner.style3:after {
+		background-color: #ec8d81;
+	}
+
+	#drift-bottle-banner.style4:after {
+		background-color: #e7b788;
+	}
+
+	#drift-bottle-banner.style5:after {
+		background-color: #8ea9e8;
+	}
+
+	#drift-bottle-banner.style6:after {
+		background-color: #87c5a4;
+	}
+
+	body.is-preload #drift-bottle-banner:after {
+		opacity: 1.0;
+	}
+
+	body.is-preload #drift-bottle-banner > .inner {
+		-moz-filter: blur(0.125em);
+		-webkit-filter: blur(0.125em);
+		-ms-filter: blur(0.125em);
+		filter: blur(0.125em);
+		-moz-transform: translateX(-0.5em);
+		-webkit-transform: translateX(-0.5em);
+		-ms-transform: translateX(-0.5em);
+		transform: translateX(-0.5em);
+		opacity: 0;
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		#drift-bottle-banner {
+			background-attachment: scroll;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#drift-bottle-banner {
+			padding: 5em 0 1em 0 ;
+			height: auto;
+			margin-bottom: -2.75em;
+			max-height: none;
+			min-height: 0;
+			top: -2.75em;
+		}
+
+			#drift-bottle-banner h1 {
+				font-size: 2em;
+			}
+
+			#drift-bottle-banner > .inner .content {
+				display: block;
+			}
+
+				#drift-bottle-banner > .inner .content > * {
+					margin-right: 0;
+					margin-bottom: 2em;
+				}
+
+			#drift-bottle-banner.major {
+				height: auto;
+				min-height: 0;
+				max-height: none;
+			}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#drift-bottle-banner {
+			padding: 6em 0 2em 0 ;
+		}
+
+			#drift-bottle-banner > .inner .content p br {
+				display: none;
+			}
+
+			#drift-bottle-banner.major {
+				padding: 8em 0 4em 0 ;
+			}
+
+	}
 
 /* Main */
 
