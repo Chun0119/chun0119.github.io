@@ -161,10 +161,17 @@ input, select, textarea {
 		a:hover {
 			border-bottom-color: transparent;
 			color: #9bf1ff !important;
+			text-decoration: none;
 		}
 
 		a:active {
 			color: #53e3fb !important;
+		}
+		
+		a:focus {
+			color: #ffffff;
+			text-decoration: none;
+			outline: none;
 		}
 
 	strong, b {
