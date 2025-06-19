@@ -5,33 +5,33 @@ import './Skills.css';
 const Skills = () => {
   const skillCategories = [
     {
-      category: 'Frontend',
+      category: 'Game Engines',
       skills: [
-        { name: 'React', level: 90 },
-        { name: 'JavaScript', level: 85 },
-        { name: 'TypeScript', level: 80 },
-        { name: 'HTML/CSS', level: 95 },
-        { name: 'Next.js', level: 75 }
+        { name: 'Unity', level: 95 },
+        { name: 'Unreal Engine', level: 85 },
+        { name: 'C#', level: 90 },
+        { name: 'C++', level: 80 },
+        { name: 'Blueprints', level: 85 }
       ]
     },
     {
-      category: 'Backend',
+      category: 'VR/AR Development',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Python', level: 80 },
-        { name: 'Express.js', level: 85 },
-        { name: 'MongoDB', level: 75 },
-        { name: 'PostgreSQL', level: 70 }
+        { name: 'SteamVR', level: 90 },
+        { name: 'Oculus SDK', level: 85 },
+        { name: 'ARKit', level: 80 },
+        { name: 'ARCore', level: 75 },
+        { name: 'VR Interaction', level: 90 }
       ]
     },
     {
-      category: 'Tools & Others',
+      category: 'Mobile & Tools',
       skills: [
+        { name: 'iOS Development', level: 85 },
+        { name: 'Android Development', level: 80 },
         { name: 'Git', level: 90 },
-        { name: 'Docker', level: 70 },
-        { name: 'AWS', level: 65 },
-        { name: 'Figma', level: 75 },
-        { name: 'Agile', level: 85 }
+        { name: 'Performance Optimization', level: 85 },
+        { name: '3D Modeling', level: 70 }
       ]
     }
   ];
@@ -56,7 +56,7 @@ const Skills = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Technologies and tools I use to bring ideas to life
+          Technologies and tools I use to create immersive gaming experiences
         </motion.p>
 
         <div className="skills-grid">
@@ -110,12 +110,12 @@ const Skills = () => {
           <div className="summary-card">
             <h3>What I Bring</h3>
             <ul>
-              <li>Full-stack development expertise</li>
-              <li>Modern web technologies and frameworks</li>
-              <li>Responsive and accessible design</li>
-              <li>Performance optimization</li>
+              <li>Full-stack game development expertise</li>
+              <li>VR/AR development and optimization</li>
+              <li>Cross-platform mobile game development</li>
+              <li>Performance optimization and debugging</li>
               <li>Clean code and best practices</li>
-              <li>Problem-solving and debugging skills</li>
+              <li>Problem-solving and creative thinking</li>
             </ul>
           </div>
         </motion.div>

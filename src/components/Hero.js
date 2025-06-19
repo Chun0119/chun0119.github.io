@@ -1,11 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
   const scrollToAbout = () => {
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleResumeDownload = () => {
+    // Replace this URL with your actual resume PDF file
+    const resumeUrl = '/resume.pdf'; // You'll need to add your resume.pdf to the public folder
+    
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'S.Y.Chun_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -62,6 +75,16 @@ const Hero = () => {
               onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
             >
               View My Work
+            </motion.button>
+            
+            <motion.button
+              className="btn btn-secondary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleResumeDownload}
+            >
+              <Download size={20} />
+              Download Resume
             </motion.button>
             
             <motion.button

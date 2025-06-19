@@ -7,7 +7,7 @@ const About = () => {
   const personalInfo = [
     { icon: <User size={20} />, label: 'Name', value: 'S.Y. Chun' },
     { icon: <MapPin size={20} />, label: 'Location', value: 'Your City, Country' },
-    { icon: <Calendar size={20} />, label: 'Experience', value: '3+ Years' },
+    { icon: <Calendar size={20} />, label: 'Experience', value: '5+ Years' },
     { icon: <Mail size={20} />, label: 'Email', value: 'your.email@example.com' }
   ];
 
@@ -31,7 +31,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Passionate developer with a love for creating innovative solutions and beautiful user experiences
+          Passionate game developer with expertise in VR/AR, mobile, and PC game development
         </motion.p>
 
         <div className="about-content">
@@ -44,18 +44,18 @@ const About = () => {
           >
             <h3>Who I Am</h3>
             <p>
-              I'm a dedicated full-stack developer with a passion for creating meaningful digital experiences. 
-              With expertise in modern web technologies, I specialize in building scalable applications that 
-              solve real-world problems.
+              I'm a dedicated game developer with a passion for creating immersive and engaging gaming experiences. 
+              With expertise in Unity and Unreal Engine, I specialize in developing games across multiple platforms 
+              including VR, AR, mobile, and PC.
             </p>
             <p>
-              My journey in software development began with curiosity and has evolved into a deep understanding 
-              of both frontend and backend technologies. I believe in writing clean, maintainable code and 
-              staying up-to-date with the latest industry trends.
+              My journey in game development began with a fascination for interactive storytelling and has evolved 
+              into a deep understanding of game mechanics, performance optimization, and user experience design. 
+              I believe in creating games that not only entertain but also push the boundaries of what's possible.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-              projects, or sharing knowledge with the developer community.
+              When I'm not coding, you can find me exploring new game development techniques, contributing to 
+              open-source projects, or sharing knowledge with the game development community.
             </p>
           </motion.div>
 
@@ -97,15 +97,15 @@ const About = () => {
         >
           <div className="stats-grid">
             <div className="stat-item">
-              <h4>20+</h4>
-              <p>Projects Completed</p>
+              <h4>15+</h4>
+              <p>Games Developed</p>
             </div>
             <div className="stat-item">
-              <h4>3+</h4>
+              <h4>5+</h4>
               <p>Years Experience</p>
             </div>
             <div className="stat-item">
-              <h4>15+</h4>
+              <h4>8+</h4>
               <p>Technologies</p>
             </div>
             <div className="stat-item">

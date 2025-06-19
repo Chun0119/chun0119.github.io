@@ -101,6 +101,23 @@
   font-size: 0.9rem;
 }
 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-tag {
+  background: rgba(102, 126, 234, 0.3);
+  color: #667eea;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid rgba(102, 126, 234, 0.5);
+}
+
 .project-technologies {
   display: flex;
   flex-wrap: wrap;
@@ -108,13 +125,13 @@
 }
 
 .tech-tag {
-  background: rgba(102, 126, 234, 0.2);
-  color: #667eea;
+  background: rgba(255, 255, 255, 0.1);
+  color: #cccccc;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid rgba(102, 126, 234, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .projects-cta {
@@ -122,10 +139,13 @@
   margin-top: 3rem;
 }
 
-.projects-cta p {
-  font-size: 1.2rem;
-  color: #cccccc;
-  margin-bottom: 1.5rem;
+.projects-cta .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -144,5 +164,10 @@
   
   .project-title {
     font-size: 1.1rem;
+  }
+  
+  .projects-cta .btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
   }
 } 

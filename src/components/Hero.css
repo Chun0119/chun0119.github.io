@@ -74,6 +74,14 @@
   flex-wrap: wrap;
 }
 
+.hero-buttons .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 160px;
+  justify-content: center;
+}
+
 .hero-social {
   display: flex;
   gap: 1.5rem;
