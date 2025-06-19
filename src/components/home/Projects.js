@@ -13,7 +13,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleViewAllProjects = () => {
-    navigate('/projects');
+    navigate('/projects', { replace: true });
   };
 
   const handleProjectClick = (project) => {

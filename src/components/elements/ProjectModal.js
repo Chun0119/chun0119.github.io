@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Calendar, Users, Globe, ExternalLink, Github } from 'lucide-react';
+import { X, Calendar, Users, Globe, ExternalLink, Github, Play } from 'lucide-react';
+import { getYouTubeEmbedUrl } from '../../config/projects';
 import './ProjectModal.css';
 
 const ProjectModal = ({ project, isOpen, onClose }) => {
   if (!project) return null;
+
+  const embedUrl = project.videoUrl ? getYouTubeEmbedUrl(project.videoUrl) : null;
 
   return (
     <AnimatePresence>
@@ -41,6 +44,25 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
               </div>
 
               <div className="modal-body">
+                {/* Video Section */}
+                {embedUrl && (
+                  <div className="modal-video">
+                    <h3>
+                      <Play size={20} />
+                      Project Demo
+                    </h3>
+                    <div className="video-container">
+                      <iframe
+                        src={embedUrl}
+                        title={`${project.title} Demo`}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                )}
+
                 <div className="modal-description">
                   <h3>Project Overview</h3>
                   <p>{project.detailedDescription}</p>

@@ -77,6 +77,31 @@
   font-weight: 600;
 }
 
+.video-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--success-color);
+  color: var(--text-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
 .project-click-hint {
   position: absolute;
   bottom: 1rem;

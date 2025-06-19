@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Play } from 'lucide-react';
 import './ProjectCard.css';
 
 const ProjectCard = ({ 
@@ -59,6 +59,12 @@ const ProjectCard = ({
         </div>
         {project.featured && (
           <div className="featured-badge">Featured</div>
+        )}
+        {project.videoUrl && (
+          <div className="video-badge">
+            <Play size={16} />
+            Video
+          </div>
         )}
         {showClickHint && (
           <div className="project-click-hint">Click for details</div>
