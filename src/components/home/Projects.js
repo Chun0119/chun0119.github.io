@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import ProjectCard from './ProjectCard';
-import ProjectModal from './ProjectModal';
-import { getFeaturedProjects } from '../config/projects';
+import ProjectCard from '../elements/ProjectCard';
+import ProjectModal from '../elements/ProjectModal';
+import { getFeaturedProjects } from '../../config/projects';
 import './Projects.css';
 
 const Projects = () => {

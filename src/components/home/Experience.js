@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { experiences, careerHighlights } from '../config/experience';
-import ExperienceItem from './ExperienceItem';
+import { experiences, careerHighlights } from '../../config/experience';
+import ExperienceItem from '../elements/ExperienceItem';
 import './Experience.css';
 
 const Experience = () => {
