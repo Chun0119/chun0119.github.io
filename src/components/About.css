@@ -8,19 +8,19 @@
 .about-text h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #667eea;
+  color: var(--text-accent);
 }
 
 .about-text p {
   margin-bottom: 1.5rem;
   line-height: 1.8;
-  color: #cccccc;
+  color: var(--text-secondary);
 }
 
 .about-info h3 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  color: #667eea;
+  color: var(--text-accent);
 }
 
 .info-grid {
@@ -33,13 +33,13 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-card);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-primary);
 }
 
 .info-icon {
-  color: #667eea;
+  color: var(--text-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,13 +56,13 @@
 
 .info-label {
   font-size: 0.9rem;
-  color: #888;
+  color: var(--text-muted);
   margin-bottom: 0.25rem;
 }
 
 .info-value {
   font-weight: 600;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .about-stats {
@@ -78,9 +78,9 @@
 .stat-item {
   text-align: center;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-card);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-primary);
   transition: transform 0.3s ease;
 }
 
@@ -91,12 +91,12 @@
 .stat-item h4 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #667eea;
+  color: var(--text-accent);
   margin-bottom: 0.5rem;
 }
 
 .stat-item p {
-  color: #cccccc;
+  color: var(--text-secondary);
   font-weight: 500;
 }
 

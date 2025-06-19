@@ -1,3 +1,51 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #667eea;
+  --primary-color-dark: #5a6fd8;
+  --secondary-color: #764ba2;
+  --secondary-color-dark: #6a4190;
+  
+  /* Background Colors */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --bg-card-hover: rgba(255, 255, 255, 0.1);
+  --bg-overlay: rgba(0, 0, 0, 0.8);
+  --bg-overlay-light: rgba(0, 0, 0, 0.3);
+  --bg-modal: rgba(20, 20, 20, 0.95);
+  
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #888888;
+  --text-accent: #667eea;
+  
+  /* Border Colors */
+  --border-primary: rgba(255, 255, 255, 0.1);
+  --border-secondary: rgba(255, 255, 255, 0.2);
+  --border-accent: rgba(102, 126, 234, 0.3);
+  --border-accent-strong: rgba(102, 126, 234, 0.5);
+  
+  /* Gradient Colors - Keep the gradient structure */
+  --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  
+  /* Shadow Colors */
+  --shadow-primary: rgba(102, 126, 234, 0.3);
+  --shadow-secondary: rgba(0, 0, 0, 0.3);
+  --shadow-card: rgba(102, 126, 234, 0.1);
+  
+  /* Status Colors */
+  --success-color: #4ade80;
+  --error-color: #f87171;
+  --warning-color: #fbbf24;
+  --info-color: #60a5fa;
+  
+  /* Special Colors */
+  --heart-color: #ff6b6b;
+  --featured-border: #667eea;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +59,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   line-height: 1.6;
 }
 

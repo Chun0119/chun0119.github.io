@@ -8,11 +8,11 @@
 .contact-info h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #667eea;
+  color: var(--text-accent);
 }
 
 .contact-info p {
-  color: #cccccc;
+  color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -29,21 +29,21 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-card);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-primary);
   transition: all 0.3s ease;
   text-decoration: none;
   color: inherit;
 }
 
 .contact-item:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--bg-card-hover);
   transform: translateX(5px);
 }
 
 .contact-icon {
-  color: #667eea;
+  color: var(--text-accent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,18 +56,18 @@
 .contact-text h4 {
   font-size: 1rem;
   margin-bottom: 0.25rem;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .contact-text span {
-  color: #cccccc;
+  color: var(--text-secondary);
   font-size: 0.9rem;
 }
 
 .social-links h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #667eea;
+  color: var(--text-accent);
 }
 
 .social-icons {
@@ -76,25 +76,25 @@
 }
 
 .social-icons a {
-  color: #ffffff;
+  color: var(--text-primary);
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-card);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-primary);
   transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #667eea;
+  color: var(--text-accent);
   background: rgba(102, 126, 234, 0.1);
   transform: translateY(-2px);
 }
 
 .contact-form {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-card);
   border-radius: 16px;
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-primary);
 }
 
 .form-group {
@@ -105,24 +105,24 @@
 .form-group textarea {
   width: 100%;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-primary);
   border-radius: 8px;
-  color: #ffffff;
+  color: var(--text-primary);
   font-size: 1rem;
   transition: all 0.3s ease;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #888;
+  color: var(--text-muted);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #667eea;
-  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--text-accent);
+  background: var(--bg-card-hover);
 }
 
 .form-group textarea {

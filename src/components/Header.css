@@ -12,7 +12,7 @@
 
 .header.scrolled {
   background: rgba(10, 10, 10, 0.95);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 20px var(--shadow-secondary);
 }
 
 .header .container {
@@ -24,7 +24,7 @@
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #667eea;
+  color: var(--text-accent);
   cursor: pointer;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .nav-link {
-  color: #ffffff;
+  color: var(--text-primary);
   font-weight: 500;
   transition: color 0.3s ease;
   background: none;
@@ -44,12 +44,12 @@
 }
 
 .nav-link:hover {
-  color: #667eea;
+  color: var(--text-accent);
 }
 
 .mobile-menu-btn {
   display: none;
-  color: #ffffff;
+  color: var(--text-primary);
   background: none;
   border: none;
   cursor: pointer;

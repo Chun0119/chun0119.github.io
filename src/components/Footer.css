@@ -1,7 +1,7 @@
 .footer {
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--bg-overlay);
   backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--border-primary);
   padding: 3rem 0 1rem;
   margin-top: 4rem;
 }
@@ -15,19 +15,19 @@
 
 .footer-info h3 {
   font-size: 1.5rem;
-  color: #667eea;
+  color: var(--text-accent);
   margin-bottom: 1rem;
 }
 
 .footer-info p {
-  color: #cccccc;
+  color: var(--text-secondary);
   line-height: 1.6;
   max-width: 400px;
 }
 
 .footer-social h4 {
   font-size: 1.2rem;
-  color: #667eea;
+  color: var(--text-accent);
   margin-bottom: 1rem;
 }
 
@@ -37,16 +37,16 @@
 }
 
 .social-links a {
-  color: #ffffff;
+  color: var(--text-primary);
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-card);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-primary);
   transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #667eea;
+  color: var(--text-accent);
   background: rgba(102, 126, 234, 0.1);
   transform: translateY(-2px);
 }
@@ -62,7 +62,7 @@
 }
 
 .footer-bottom p {
-  color: #888;
+  color: var(--text-muted);
   font-size: 0.9rem;
   display: flex;
   align-items: center;
@@ -71,7 +71,7 @@
 }
 
 .heart {
-  color: #ff6b6b;
+  color: var(--heart-color);
   animation: heartbeat 2s infinite;
 }
 
