@@ -10,6 +10,10 @@ import tadaScreenshot4 from '../assets/tada-screenshot-4.webp';
 import mxLogo from '../assets/mx.jpg';
 import mxScreenshot1 from '../assets/mx-screenshot-1.png';
 import mxScreenshot2 from '../assets/mx-screenshot-2.png';
+import mentalHealthLogo from '../assets/mental-health.jpg';
+import roadSafetyLogo from '../assets/road-safety.png';
+import roadSafetyScreenshot1 from '../assets/road-safety-screenshot-1.webp';
+import iGotYouLogo from '../assets/i-got-you.png';
 
 export const projects = [
   {
@@ -96,6 +100,76 @@ export const projects = [
       mxScreenshot1,
       mxScreenshot2,
     ]
+  },
+  {
+    id: 4,
+    title: 'Mental Health (Emotional Stress) VR',
+    description: 'A local multiplayer VR game where players team up over a local network to combat AI-controlled enemies in a collaborative, immersive environment.',
+    detailedDescription: 'A local multiplayer VR game built with Unreal Engine, designed to support real-time interaction and teamwork. The game features a character selection lobby, a local network matchmaking room, and cooperative combat against enemies with basic AI behaviors, all within an immersive VR environment.',
+    image: mentalHealthLogo,
+    videoUrl: 'https://youtu.be/i_dpuBZ2_rQ',
+    technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Multiplayer'],
+    tags: ['Unreal Engine', 'VR', 'Game'],
+    live: 'https://eteamxr.com/en/portfolio/mental-health-emotional-stress-vr/',
+    featured: false,
+    details: {
+      team: 'Eteam Entertainment',
+      role: 'XR Software Developer',
+      features: [
+        'Built core gameplay flow, including character selection lobby, matchmaking room, and game session transitions',
+        'Implemented local multiplayer using Unreal Online Subsystem, enabling seamless peer discovery and matchmaking over a local network',
+        'Developed enemy AI with basic behavior logic, including detection, navigation, and attack patterns to support cooperative gameplay',
+      ]
+    },
+    projectType: 'professional',
+  },
+  {
+    id: 5,
+    title: 'Road Safety VR Game',
+    description: 'An educational VR simulation game supporting both single-player and multiplayer modes, where players take on the role of a traffic police officer.',
+    detailedDescription: 'An educational VR simulation game built with Unreal Engine, where players act as traffic police to issue commands to vehicles and pedestrians while responding to dynamic road situations. In multiplayer mode, a connected iPad allows a second player to trigger real-time events, adding interactivity and unpredictability to the gameplay.',
+    image: roadSafetyLogo,
+    videoUrl: 'https://youtu.be/zxnvcKwdX4Y',
+    technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Multiplayer'],
+    tags: ['Unreal Engine', 'VR', 'Game'],
+    live: 'https://eteamxr.com/en/portfolio/road-safety-vr-game/',
+    featured: false,
+    details: {
+      team: 'Eteam Entertainment',
+      role: 'XR Software Developer',
+      features: [
+        'Sole developer responsible for the full game implementation in Unreal Engine (Blueprint + C++)',
+        'Developed immersive VR interaction systems for commanding AI-controlled vehicles and pedestrians',
+        'Implemented cross-platform multiplayer interaction, allowing an iPad to trigger dynamic in-game events on a connected VR headset via local network',
+        'Created a flexible event system for generating real-time traffic scenarios (e.g. accidents, jaywalking, hazards)',
+      ]
+    },
+    projectType: 'professional',
+    images: [
+      roadSafetyScreenshot1,
+    ]
+  },
+  {
+    id: 6,
+    title: 'I Got You VR',
+    description: 'A networked multiplayer VR survival game where players take on the roles of a witch or elves, combining stealth and strategy in a haunted mansion escape scenario.',
+    detailedDescription: 'A networked multiplayer VR survival game built with Unreal Engine, where one player becomes the witch, tasked with capturing the others—elves—who must work together to explore a haunted mansion, find hidden keys, and unlock the escape door without being caught. The game blends stealth, strategy, and exploration in a tense, immersive VR environment.',
+    image: iGotYouLogo,
+    videoUrl: 'https://youtu.be/Xc4i59tbHgQ',
+    technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Multiplayer', 'Voice Chat', 'AWS GameLift'],
+    tags: ['Unreal Engine', 'VR', 'Game'],
+    live: 'https://eteamxr.com/en/portfolio/i-got-you-vr/',
+    featured: false,
+    details: {
+      team: 'Eteam Entertainment',
+      role: 'XR Software Developer',
+      features: [
+        'Integrated Vivox voice chat for real-time multiplayer communication',
+        'Developed AI behavior for both witch and elf roles to support incomplete lobbies',
+        'Implemented core game flow logic, including role assignment, session management, and win/lose conditions',
+      ]
+    },
+    projectType: 'professional'
   },
 ];
 

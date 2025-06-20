@@ -89,7 +89,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                   </div>
 
                   <div className="modal-features">
-                    <h3>Key Contributions</h3>
+                    <h3>Highlights</h3>
                     <ul>
                       {project.details.features.map((feature, index) => (
                         <li key={index}>{feature}</li>
