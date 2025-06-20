@@ -25,7 +25,7 @@ const Experience = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          My professional journey in game development and immersive technologies
+          My professional journey in game development
         </motion.p>
 
         <div className="experience-timeline">

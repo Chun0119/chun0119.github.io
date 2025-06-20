@@ -34,14 +34,17 @@ const ExperienceItem = ({ experience, index }) => {
         </div>
         
         <div className="experience-description">
-          <p>{experience.description}</p>
+          <p dangerouslySetInnerHTML={{ __html: experience.description }} />
         </div>
 
         <div className="experience-achievements">
           <h5>Key Achievements:</h5>
           <ul>
             {experience.achievements.map((achievement, achievementIndex) => (
-              <li key={achievementIndex}>{achievement}</li>
+              <li 
+                key={achievementIndex}
+                dangerouslySetInnerHTML={{ __html: achievement }}
+              />
             ))}
           </ul>
         </div>

@@ -1,87 +1,87 @@
+import fluffyDogLogo from '../assets/fluffydog.png';
+import gabiLogo from '../assets/gabi.png';
+import canvaslandLogo from '../assets/canvasland.png';
+import playstudiosLogo from '../assets/playstudios.png';
+import eteamLogo from '../assets/eteam.webp';
+
 export const experiences = [
   {
     id: 1,
-    company: 'GameStudio Pro',
-    position: 'Senior Game Developer',
-    location: 'San Francisco, CA',
-    duration: '2022 - Present',
-    description: 'Leading development of VR and mobile games using Unity and Unreal Engine. Managing a team of 5 developers and overseeing project delivery.',
+    company: 'Fluffy Dog Studio',
+    position: 'Intermediate Game Developer',
+    location: 'Vancouver, BC, Canada',
+    duration: '2023 Oct - Present',
+    description: 'Developing mobile games featuring the Neopets IP',
     achievements: [
-      'Developed 3 successful VR games with over 100K downloads',
-      'Optimized game performance by 40% across mobile platforms',
-      'Implemented advanced AI systems for NPC behavior',
-      'Mentored junior developers and established coding standards'
+      'Contributed to 2 published mobile games: <a href="https://www.neopets.com/talesofdacardia/" target="_blank" rel="noopener noreferrer">Neopets: Tales of Dacardia</a> and <a href="https://www.neopets.com/faeriefragments/" target="_blank" rel="noopener noreferrer">Neopets: Faerie Fragments</a> collectively reaching 100K+ downloads',
+      'Developed 3 internal tools to streamline workflows and boost cross-team efficiency',
+      'Delivered 2 rapid prototypes for unannounced projects, accelerating early-stage concept validation',
     ],
-    technologies: ['Unity', 'C#', 'VR Development', 'Team Leadership', 'Performance Optimization'],
-    logo: 'https://via.placeholder.com/60x60/667eea/ffffff?text=GSP'
+    technologies: ['Unity', 'C#', 'Lua', 'JavaScript', 'TypeScript', 'Agile'],
+    logo: fluffyDogLogo
   },
   {
     id: 2,
-    company: 'Virtual Reality Labs',
-    position: 'VR Developer',
-    location: 'Seattle, WA',
-    duration: '2020 - 2022',
-    description: 'Specialized in VR application development using SteamVR and Oculus SDK. Created immersive experiences for training and entertainment.',
+    company: 'Gabi Education',
+    position: 'Software Developer (Freelance)',
+    location: 'Hong Kong',
+    duration: '2019 Nov - Present',
+    description: 'Specialized in developing educational games and software for children, distributed directly to schools for internal classroom use',
     achievements: [
-      'Built 5 VR applications for corporate training programs',
-      'Reduced motion sickness in VR experiences by 60%',
-      'Developed custom VR interaction frameworks',
-      'Collaborated with UX designers to improve user experience'
+      'Developed 10+ educational games and software (including 60+ mini-games) as the sole full-stack developer, supporting 1K+ students',
+      'Integrated various APIs such as ChatGPT and Speech Recognition to enhance interactivity',
+      'Built custom web-based management system for real-time game data tracking, management, and visualization', 
+      'Created multiple Python scripts to analyze gameplay metrics and user behavior',
     ],
-    technologies: ['SteamVR', 'Oculus SDK', 'C++', 'VR Optimization', '3D Modeling'],
-    logo: 'https://via.placeholder.com/60x60/764ba2/ffffff?text=VRL'
+    technologies: ['Unity', 'C#', 'Android Studio', 'Java', 'Python', 'PHP', 'HTML', 'JavaScript', 'SQL'],
+    logo: gabiLogo
   },
   {
     id: 3,
-    company: 'Mobile Gaming Inc',
-    position: 'Mobile Game Developer',
-    location: 'Austin, TX',
-    duration: '2018 - 2020',
-    description: 'Developed cross-platform mobile games for iOS and Android. Focused on casual games with social features and monetization.',
+    company: 'CanvasLand Metaverse Production',
+    position: 'Game Developer (Freelance)',
+    location: 'Hong Kong',
+    duration: '2022 Aug - 2024 Aug',
+    description: 'Delivered custom 3D metaverse solutions for brands and institutions, with immersive experiences across web, desktop, and VR platforms',
     achievements: [
-      'Released 4 mobile games with 500K+ combined downloads',
-      'Implemented in-app purchase systems generating $200K+ revenue',
-      'Optimized games for various device specifications',
-      'Integrated social features and leaderboards'
+      'Led full-stack development for 8 metaverse projects, serving clients in banking, education, and hospitality',
+      'Integrated advanced tech stacks across Unity, Unreal, Decentraland, React, Three.js, AWS, and more',
+      'Implemented multiplayer, voice chat, and avatar systems using Photon Fusion, Agora, and Ready Player Me',
+      'Integrated Web3 features, including wallet support with thirdweb',
     ],
-    technologies: ['Unity', 'C#', 'iOS/Android', 'Monetization', 'Social Features'],
-    logo: 'https://via.placeholder.com/60x60/667eea/ffffff?text=MGI'
+    technologies: ['Unity', 'C#', 'Unreal Engine', 'Blueprint', 'VR', 'JavaScript', 'TypeScript', 'Photon'],
+    logo: canvaslandLogo
   },
   {
     id: 4,
-    company: 'Indie Game Studio',
-    position: 'Game Developer',
-    location: 'Remote',
-    duration: '2016 - 2018',
-    description: 'Worked on independent game projects, handling all aspects of development from concept to release.',
+    company: 'PlayStudios Asia',
+    position: 'Associate Frontend Engineer - Unity',
+    location: 'Hong Kong',
+    duration: '2021 Oct - 2023 Jun',
+    description: 'Worked on <a href="https://www.playstudios.com/myvegas-slots/" target="_blank" rel="noopener noreferrer">myVEGAS Slots</a>, a top-performing social casino mobile game',
     achievements: [
-      'Completed 2 indie games with positive reviews',
-      'Learned full game development pipeline',
-      'Developed skills in game design and user experience',
-      'Built a strong foundation in game development principles'
+      'Enhanced and expanded core game features, including implementing a new level milestone system',
+      'Contributed to live operations, integrating new slot games, sales blockers, and special event content to drive user engagement',
+      'Developed 7 internal tools, reducing slot game release cadence from 5 weeks to 2 weeks and improving QA/debugging efficiency',
+      'Created automation tools, including backend testing programs and content conversion scripts, streamlining collaboration with product owners',
     ],
-    technologies: ['Unity', 'C#', 'Game Design', 'Project Management', 'User Experience'],
-    logo: 'https://via.placeholder.com/60x60/764ba2/ffffff?text=IGS'
+    technologies: ['Unity', 'C#', 'Lua', 'JavaScript', 'TypeScript', '.NET', 'Python', 'Agile'],
+    logo: playstudiosLogo
+  },
+  {
+    id: 5,
+    company: 'Eteam Entertainment',
+    position: 'XR Software Developer',
+    location: 'Hong Kong',
+    duration: '2020 Jun - 2021 Oct',
+    description: 'Focused on delivering AR/VR/MR solutions and original game development',
+    achievements: [
+      'Developed 20 XR applications and games across platforms including VR (4), AR (6), MR (3), and interactive games (7)',
+      'Deployed on diverse devices such as Oculus Quest/Go, HoloLens, Nreal, and standard mobile/PC platforms',
+      'Worked with multiple game engines and SDKs including Unreal Engine (C++), Unity (C#), SparkAR, and JavaScript',
+      'Integrated cloud and spatial services like AWS, Photon, Azure Spatial Anchors, Vivox voice chat, and Kinect/Cubemos body tracking',
+    ],
+    technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Unity', 'C#', 'VR', 'AR', 'MR', 'JavaScript'],
+    logo: eteamLogo
   }
 ];
-
-// Helper function to get experience by ID
-export const getExperienceById = (id) => {
-  return experiences.find(experience => experience.id === id);
-};
-
-// Helper function to get experiences by company
-export const getExperiencesByCompany = (company) => {
-  return experiences.filter(experience => 
-    experience.company.toLowerCase().includes(company.toLowerCase())
-  );
-};
-
-// Helper function to get experiences by technology
-export const getExperiencesByTechnology = (technology) => {
-  return experiences.filter(experience => 
-    experience.technologies.some(tech => 
-      tech.toLowerCase().includes(technology.toLowerCase())
-    )
-  );
-}; 
