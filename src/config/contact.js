@@ -8,38 +8,37 @@ export const contactData = {
     {
       icon: 'Mail',
       title: 'Email',
-      value: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      value: 'sarah.chun.0119@gmail.com',
+      link: 'mailto:sarah.chun.0119@gmail.com'
     },
     {
       icon: 'Phone',
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '+1 (236) 971-0699',
+      link: 'tel:+12369710699'
     },
     {
       icon: 'MapPin',
       title: 'Location',
-      value: 'Your City, Country',
-      link: '#'
+      value: 'Richmond, BC, Canada'
     }
   ],
   
   socialLinks: [
     { 
       icon: 'Github', 
-      url: 'https://github.com', 
+      url: 'https://github.com/Chun0119', 
       label: 'GitHub' 
     },
     { 
       icon: 'Linkedin', 
-      url: 'https://linkedin.com', 
+      url: 'https://www.linkedin.com/in/sarah-chun-65819a222/', 
       label: 'LinkedIn' 
     },
-    { 
-      icon: 'Twitter', 
-      url: 'https://twitter.com', 
-      label: 'Twitter' 
+    {
+      icon: "Mail",
+      url: "mailto:sarah.chun.0119@gmail.com",
+      label: "Email"
     }
   ]
 }; 

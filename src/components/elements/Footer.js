@@ -1,16 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { contactData } from '../../config/contact';
 import './Footer.css';
 
 const Footer = () => {
+  // Icon mapping
+  const iconMap = {
+    Github: <Github size={24} />,
+    Linkedin: <Linkedin size={24} />,
+    Mail: <Mail size={24} />,
+  };
+
   const currentYear = new Date().getFullYear();
-  
-  const socialLinks = [
-    { icon: <Github size={20} />, url: 'https://github.com', label: 'GitHub' },
-    { icon: <Linkedin size={20} />, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <Mail size={20} />, url: 'mailto:your.email@example.com', label: 'Email' }
-  ];
 
   return (
     <footer className="footer">
@@ -23,8 +25,8 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3>S.Y. Chun</h3>
-            <p>Full Stack Developer passionate about creating meaningful digital experiences.</p>
+            <h3>Sarah Chun</h3>
+            <p>Game Developer with 5 years of Professional Game Industry Experience</p>
           </motion.div>
 
           <motion.div
@@ -36,7 +38,7 @@ const Footer = () => {
           >
             <h4>Connect</h4>
             <div className="social-links">
-              {socialLinks.map((social, index) => (
+              {contactData.socialLinks.map((social, index) => (
                 <motion.a
                   key={index}
                   href={social.url}
@@ -46,7 +48,7 @@ const Footer = () => {
                   whileTap={{ scale: 0.9 }}
                   aria-label={social.label}
                 >
-                  {social.icon}
+                  {iconMap[social.icon]}
                 </motion.a>
               ))}
             </div>
@@ -62,7 +64,7 @@ const Footer = () => {
         >
           <div className="footer-line"></div>
           <p>
-            © {currentYear} S.Y. Chun. Made with <Heart size={16} className="heart" /> using React
+            © {currentYear} Sarah Chun. Made with <Heart size={16} className="heart" /> using React
           </p>
         </motion.div>
       </div>

@@ -56,7 +56,7 @@ const Header = () => {
   const navItems = [
     { path: '/projects', label: 'Projects', sectionId: null },
     { path: '/', label: 'Experience', sectionId: 'experience' },
-    { path: '/speaking', label: 'Speaking', sectionId: null },
+    { path: '/speaking', label: 'Speaking Engagements', sectionId: null },
     { path: '/about', label: 'About', sectionId: null },
     { path: '/', label: 'Contact', sectionId: 'contact' }
   ];
@@ -74,7 +74,7 @@ const Header = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span onClick={handleLogoClick}>S.Y. Chun</span>
+          <span onClick={handleLogoClick}>Sarah Chun</span>
         </motion.div>
 
         <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>

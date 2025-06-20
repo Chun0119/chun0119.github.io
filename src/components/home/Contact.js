@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
 import { contactData } from '../../config/contact';
 import './Contact.css';
 
@@ -12,7 +12,6 @@ const Contact = () => {
     MapPin: <MapPin size={24} />,
     Github: <Github size={24} />,
     Linkedin: <Linkedin size={24} />,
-    Twitter: <Twitter size={24} />
   };
 
   return (
@@ -71,7 +70,7 @@ const Contact = () => {
             </div>
 
             <div className="social-links">
-              <h4>Follow Me</h4>
+              <h4>Find Me</h4>
               <div className="social-icons">
                 {contactData.socialLinks.map((social, index) => (
                   <motion.a

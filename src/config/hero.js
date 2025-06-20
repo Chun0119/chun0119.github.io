@@ -1,25 +1,22 @@
 export const heroData = {
-  title: {
-    greeting: "Hi, I'm",
-    name: "S.Y. Chun"
-  },
+  title: "Sarah Chun",
   
-  subtitle: "Full Stack Developer & Creative Problem Solver",
+  subtitle: "Game Developer with 5 years of Professional Game Industry Experience",
   
-  description: "I build beautiful, functional, and user-centered digital experiences. Passionate about clean code, innovative solutions, and creating impact through technology.",
+  description: "Building games, interactive experiences, and tools. Thriving on diverse projects and solving complex problems in fast-paced environments. Passionate about creating robust tools to streamline workflows.",
   
   buttons: [
-    {
-      text: "View My Work",
-      type: "primary",
-      action: "scroll",
-      target: "projects"
-    },
     {
       text: "Download Resume",
       type: "secondary",
       action: "download",
       icon: "Download"
+    },
+    {
+      text: "View My Work",
+      type: "primary",
+      action: "scroll",
+      target: "projects"
     },
     {
       text: "Get In Touch",
@@ -29,26 +26,8 @@ export const heroData = {
     }
   ],
   
-  socialLinks: [
-    {
-      icon: "Github",
-      url: "https://github.com",
-      label: "GitHub"
-    },
-    {
-      icon: "Linkedin",
-      url: "https://linkedin.com",
-      label: "LinkedIn"
-    },
-    {
-      icon: "Mail",
-      url: "mailto:your.email@example.com",
-      label: "Email"
-    }
-  ],
-  
   resume: {
-    filename: "S.Y.Chun_Resume.pdf",
-    path: "/resume.pdf"
+    filename: "Resume_SarahChun.pdf",
+    path: "/Resume_SarahChun.pdf"
   }
 }; 

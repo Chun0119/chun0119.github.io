@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { heroData } from '../../config/hero';
+import { contactData } from '../../config/contact';
 import './Hero.css';
 
 const Hero = () => {
@@ -11,10 +12,6 @@ const Hero = () => {
     Linkedin: <Linkedin size={24} />,
     Mail: <Mail size={24} />,
     Download: <Download size={20} />
-  };
-
-  const scrollToAbout = () => {
-    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleResumeDownload = () => {
@@ -53,7 +50,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            {heroData.title.greeting} <span className="highlight">{heroData.title.name}</span>
+            <span className="highlight">{heroData.title}</span>
           </motion.h1>
           
           <motion.h2
@@ -100,7 +97,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            {heroData.socialLinks.map((social, index) => (
+            {contactData.socialLinks.map((social, index) => (
               <motion.a
                 key={index}
                 href={social.url}
@@ -116,18 +113,6 @@ const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
-      
-      <motion.button
-        className="scroll-down"
-        onClick={scrollToAbout}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.2 }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-      >
-        <ChevronDown size={24} />
-      </motion.button>
     </section>
   );
 };
