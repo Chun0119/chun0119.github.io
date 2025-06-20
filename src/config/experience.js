@@ -14,7 +14,7 @@ export const experiences = [
     description: 'Developing mobile games featuring the Neopets IP',
     achievements: [
       'Contributed to 2 published mobile games: <a href="https://www.neopets.com/talesofdacardia/" target="_blank" rel="noopener noreferrer">Neopets: Tales of Dacardia</a> and <a href="https://www.neopets.com/faeriefragments/" target="_blank" rel="noopener noreferrer">Neopets: Faerie Fragments</a> collectively reaching 100K+ downloads',
-      'Developed 3 internal tools to streamline workflows and boost cross-team efficiency',
+      'Developed 5 internal tools to streamline workflows and boost cross-team efficiency',
       'Delivered 2 rapid prototypes for unannounced projects, accelerating early-stage concept validation',
     ],
     technologies: ['Unity', 'C#', 'Lua', 'JavaScript', 'TypeScript', 'Agile'],

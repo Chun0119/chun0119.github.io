@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
 import ProjectCard from '../../components/elements/ProjectCard';
 import ProjectModal from '../../components/elements/ProjectModal';
 import { projects, getAllTags, filterProjectsByTag } from '../../config/projects';
@@ -10,7 +8,6 @@ import './AllProjects.css';
 const AllProjects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedProject, setSelectedProject] = useState(null);
-  const navigate = useNavigate();
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -35,28 +32,26 @@ const AllProjects = () => {
     setSelectedProject(null);
   };
 
-  const handleBackToHome = () => {
-    navigate('/');
-  };
-
   return (
     <div className="all-projects-page">
       <div className="page-header">
         <div className="container">
-          <motion.h1
-            className="page-title"
+          <motion.h2
+            className="section-title"
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
           >
             All Projects
-          </motion.h1>
+          </motion.h2>
           
           <motion.p
-            className="page-subtitle"
+            className="section-subtitle"
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
           >
             Explore my complete portfolio of game development projects
           </motion.p>

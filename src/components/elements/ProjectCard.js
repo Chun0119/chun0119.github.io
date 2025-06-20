@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Play } from 'lucide-react';
 import './ProjectCard.css';
 
 const ProjectCard = ({ 
@@ -16,11 +15,6 @@ const ProjectCard = ({
     }
   };
 
-  const handleLinkClick = (e, url) => {
-    e.stopPropagation();
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <motion.div
       className={`project-card ${project.featured ? 'featured' : ''} ${className}`}
@@ -33,38 +27,8 @@ const ProjectCard = ({
     >
       <div className="project-image">
         <img src={project.image} alt={project.title} />
-        <div className="project-overlay">
-          <div className="project-links">
-            <motion.a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={(e) => handleLinkClick(e, project.github)}
-            >
-              <Github size={20} />
-            </motion.a>
-            <motion.a
-              href={project.live}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={(e) => handleLinkClick(e, project.live)}
-            >
-              <ExternalLink size={20} />
-            </motion.a>
-          </div>
-        </div>
         {project.featured && (
           <div className="featured-badge">Featured</div>
-        )}
-        {project.videoUrl && (
-          <div className="video-badge">
-            <Play size={16} />
-            Video
-          </div>
         )}
         {showClickHint && (
           <div className="project-click-hint">Click for details</div>
@@ -77,6 +41,7 @@ const ProjectCard = ({
         
         {/* Project Tags */}
         <div className="project-tags">
+          <span className={`project-type-tag ${project.projectType}`}>{project.projectType === 'personal' ? 'Personal Project' : 'Professional Project'}</span>
           {project.tags.map((tag, tagIndex) => (
             <span key={tagIndex} className="project-tag">
               {tag}
