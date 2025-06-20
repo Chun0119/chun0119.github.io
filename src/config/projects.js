@@ -14,6 +14,16 @@ import mentalHealthLogo from '../assets/mental-health.jpg';
 import roadSafetyLogo from '../assets/road-safety.png';
 import roadSafetyScreenshot1 from '../assets/road-safety-screenshot-1.webp';
 import iGotYouLogo from '../assets/i-got-you.png';
+import loveNeighbourhoodLogo from '../assets/love-neighbour.png';
+import loveNeighbourhoodScreenshot1 from '../assets/love-neighbour-screenshot-1.jpg';
+import loveNeighbourhoodScreenshot2 from '../assets/love-neighbour-screenshot-2.png';
+import loveNeighbourhoodScreenshot3 from '../assets/love-neighbour-screenshot-3.png';
+import aliceLogo from '../assets/alice.jpg';
+import aliceScreenshot1 from '../assets/alice-screenshot-1.webp';
+import aliceScreenshot2 from '../assets/alice-screenshot-2.webp';
+import aliceScreenshot3 from '../assets/alice-screenshot-3.webp';
+import cyclingLogo from '../assets/cycling.jpg';
+import cyclingScreenshot1 from '../assets/cycling-screenshot-1.jpg';
 
 export const projects = [
   {
@@ -170,6 +180,85 @@ export const projects = [
       ]
     },
     projectType: 'professional'
+  },
+  {
+    id: 7,
+    title: 'Love the Neighbourhood AR',
+    description: 'An AR multiplayer room escape game where up to 8 players collaborate using physical puzzles and AR clues to solve mysteries and rescue missing residents.',
+    detailedDescription: 'An AR multiplayer room escape game built with Unity, supporting up to 8 players. Set in the fictional housing estate, players collaborate to solve puzzles, uncover clues, and rescue missing residents amid a series of mysterious incidents. The game blends real-life escape room elements—such as physical locks and evidence—with AR gameplay to create an immersive, interactive experience.',
+    image: loveNeighbourhoodLogo,
+    videoUrl: 'https://youtu.be/zwLBh8nzBpo',
+    technologies: ['Unity', 'C#', 'ARCore', 'Multiplayer', 'Photon', 'Voice Chat'],
+    tags: ['Unity', 'AR', 'Game'],
+    live: 'https://eteamxr.com/en/portfolio/love-the-neighbourhood-ar/',
+    featured: false,
+    details: {
+      team: 'Eteam Entertainment',
+      role: 'XR Software Developer',
+      features: [
+        'Developed local network multiplayer using Photon, with a dedicated admin role for real-time game monitoring',
+        'Integrated Photon Voice Chat for seamless in-game communication among players',
+        'Built the complete game flow, including narrative progression, puzzle stages, and win/lose conditions',
+        'Designed and implemented all puzzle interactions, blending physical escape room elements with interactive AR mechanics for a cohesive experience',
+      ]
+    },
+    projectType: 'professional',
+    images: [
+      loveNeighbourhoodScreenshot1,
+      loveNeighbourhoodScreenshot2,
+      loveNeighbourhoodScreenshot3,
+    ]
+  },
+  {
+    id: 8,
+    title: 'Alice in the Underland AR',
+    description: 'An AR multiplayer room escape game where up to 8 players collaborate using physical puzzles and AR clues to solve mysteries and rescue Alice.',
+    detailedDescription: 'An AR multiplayer room escape game built with Unity, where up to 8 players collaborate to rescue Alice. Players must solve puzzles, uncover clues, and avoid hidden dangers. The game combines real-world escape room elements with AR interactions and educational storytelling.',
+    image: aliceLogo,
+    videoUrl: 'https://youtu.be/2r7huyDv2Do',
+    technologies: ['Unity', 'C#', 'ARCore', 'Multiplayer', 'Photon', 'Voice Chat'],
+    tags: ['Unity', 'AR', 'Game'],
+    live: 'https://eteamxr.com/en/portfolio/alice-in-underland-ar/',
+    featured: false,
+    details: {
+      team: 'Eteam Entertainment',
+      role: 'XR Software Developer',
+      features: [
+        'Developed local network multiplayer using Photon, with a dedicated admin role for real-time game monitoring',
+        'Integrated Photon Voice Chat for seamless in-game communication among players',
+        'Built the complete game flow, including narrative progression, puzzle stages, and win/lose conditions',
+      ]
+    },
+    projectType: 'professional',
+    images: [
+      aliceScreenshot1,
+      aliceScreenshot2,
+      aliceScreenshot3,
+    ]
+  },
+  {
+    id: 9,
+    title: 'HK Cycling VR',
+    description: 'An interactive VR cycling experience where players ride a stationary gym bike while wearing a VR headset, pedaling through iconic Hong Kong locations in a virtual tour.',
+    detailedDescription: 'An interactive VR cycling experience built with Unreal, where players ride a stationary gym bike while wearing a VR headset, pedaling through iconic Hong Kong locations. Designed for an HKTDC exhibition, the game highlights Hong Kong’s status as a global financial hub through immersive, activity-based gameplay.',
+    image: cyclingLogo,
+    videoUrl: 'https://youtu.be/1YiSiqaAjk8',
+    technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Arduino'],
+    tags: ['Unreal Engine', 'VR', 'Interactive Experience'],
+    live: 'https://eteamxr.com/en/portfolio/hk-cycling-tour-vr/',
+    featured: false,
+    details: {
+      team: 'Eteam Entertainment',
+      role: 'XR Software Developer',
+      features: [
+        'Integrated Arduino hardware with the VR game, enabling real-time pedaling input from a physical gym bike',
+        'Contributed to the core game flow',
+      ]
+    },
+    projectType: 'professional',
+    images: [
+      cyclingScreenshot1,
+    ]
   },
 ];
 
