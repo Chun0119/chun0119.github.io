@@ -1,24 +1,37 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { heroData } from '../../config/hero';
 import './Hero.css';
 
 const Hero = () => {
+  // Icon mapping
+  const iconMap = {
+    Github: <Github size={24} />,
+    Linkedin: <Linkedin size={24} />,
+    Mail: <Mail size={24} />,
+    Download: <Download size={20} />
+  };
+
   const scrollToAbout = () => {
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleResumeDownload = () => {
-    // Replace this URL with your actual resume PDF file
-    const resumeUrl = '/resume.pdf'; // You'll need to add your resume.pdf to the public folder
-    
-    // Create a temporary link element to trigger download
     const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.download = 'S.Y.Chun_Resume.pdf';
+    link.href = heroData.resume.path;
+    link.download = heroData.resume.filename;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const handleButtonClick = (button) => {
+    if (button.action === 'scroll') {
+      document.getElementById(button.target).scrollIntoView({ behavior: 'smooth' });
+    } else if (button.action === 'download') {
+      handleResumeDownload();
+    }
   };
 
   return (
@@ -40,7 +53,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Hi, I'm <span className="highlight">S.Y. Chun</span>
+            {heroData.title.greeting} <span className="highlight">{heroData.title.name}</span>
           </motion.h1>
           
           <motion.h2
@@ -49,7 +62,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Full Stack Developer & Creative Problem Solver
+            {heroData.subtitle}
           </motion.h2>
           
           <motion.p
@@ -58,8 +71,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            I build beautiful, functional, and user-centered digital experiences. 
-            Passionate about clean code, innovative solutions, and creating impact through technology.
+            {heroData.description}
           </motion.p>
           
           <motion.div
@@ -68,33 +80,18 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <motion.button
-              className="btn btn-primary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
-            >
-              View My Work
-            </motion.button>
-            
-            <motion.button
-              className="btn btn-secondary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={handleResumeDownload}
-            >
-              <Download size={20} />
-              Download Resume
-            </motion.button>
-            
-            <motion.button
-              className="btn btn-secondary"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-            >
-              Get In Touch
-            </motion.button>
+            {heroData.buttons.map((button, index) => (
+              <motion.button
+                key={index}
+                className={`btn btn-${button.type}`}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => handleButtonClick(button)}
+              >
+                {button.icon && iconMap[button.icon]}
+                {button.text}
+              </motion.button>
+            ))}
           </motion.div>
           
           <motion.div
@@ -103,33 +100,19 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            <motion.a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.2, y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Github size={24} />
-            </motion.a>
-            
-            <motion.a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.2, y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Linkedin size={24} />
-            </motion.a>
-            
-            <motion.a
-              href="mailto:your.email@example.com"
-              whileHover={{ scale: 1.2, y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Mail size={24} />
-            </motion.a>
+            {heroData.socialLinks.map((social, index) => (
+              <motion.a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2, y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label={social.label}
+              >
+                {iconMap[social.icon]}
+              </motion.a>
+            ))}
           </motion.div>
         </motion.div>
       </div>

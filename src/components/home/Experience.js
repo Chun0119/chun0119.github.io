@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { experiences, careerHighlights } from '../../config/experience';
+import { experiences } from '../../config/experience';
 import ExperienceItem from '../elements/ExperienceItem';
 import './Experience.css';
 
@@ -37,26 +37,6 @@ const Experience = () => {
             />
           ))}
         </div>
-
-        <motion.div
-          className="experience-summary"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="summary-card">
-            <h3>Career Highlights</h3>
-            <div className="highlights-grid">
-              {careerHighlights.map((highlight, index) => (
-                <div key={index} className="highlight-item">
-                  <span className="highlight-number">{highlight.number}</span>
-                  <span className="highlight-label">{highlight.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

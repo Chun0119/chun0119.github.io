@@ -65,26 +65,6 @@ export const experiences = [
   }
 ];
 
-// Career highlights data
-export const careerHighlights = [
-  {
-    number: '8+',
-    label: 'Years Experience'
-  },
-  {
-    number: '15+',
-    label: 'Games Developed'
-  },
-  {
-    number: '1M+',
-    label: 'Downloads'
-  },
-  {
-    number: '4',
-    label: 'Companies'
-  }
-];
-
 // Helper function to get experience by ID
 export const getExperienceById = (id) => {
   return experiences.find(experience => experience.id === id);

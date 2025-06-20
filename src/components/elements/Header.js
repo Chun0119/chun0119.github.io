@@ -19,15 +19,27 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleNavigation = (sectionId) => {
-    if (location.pathname !== '/') {
-      // If not on home page, navigate to home first
-      navigate('/', { state: { scrollTo: sectionId } });
+  const handleNavigation = (path, sectionId = null) => {
+    if (sectionId) {
+      // Handle sections on home page
+      if (location.pathname !== '/') {
+        // If not on home page, navigate to home first
+        navigate('/', { state: { scrollTo: sectionId } });
+      } else {
+        // If on home page, scroll to section
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
     } else {
-      // If on home page, scroll to section
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+      // Handle separate routes
+      if (location.pathname === path) {
+        // If already on the page, scroll to top
+        window.scrollTo(0, 0);
+      } else {
+        // Navigate to the page
+        navigate(path);
       }
     }
     setIsMobileMenuOpen(false);
@@ -37,19 +49,16 @@ const Header = () => {
     if (location.pathname !== '/') {
       navigate('/');
     } else {
-      const element = document.getElementById('hero');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      window.scrollTo(0, 0);
     }
   };
 
   const navItems = [
-    { id: 'about', label: 'About' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'speaking', label: 'Speaking' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'contact', label: 'Contact' }
+    { path: '/projects', label: 'Projects', sectionId: null },
+    { path: '/', label: 'Experience', sectionId: 'experience' },
+    { path: '/speaking', label: 'Speaking', sectionId: null },
+    { path: '/about', label: 'About', sectionId: null },
+    { path: '/', label: 'Contact', sectionId: 'contact' }
   ];
 
   return (
@@ -72,13 +81,13 @@ const Header = () => {
           <ul className="nav-list">
             {navItems.map((item) => (
               <motion.li
-                key={item.id}
+                key={item.path + item.sectionId}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <button
                   className="nav-link"
-                  onClick={() => handleNavigation(item.id)}
+                  onClick={() => handleNavigation(item.path, item.sectionId)}
                 >
                   {item.label}
                 </button>

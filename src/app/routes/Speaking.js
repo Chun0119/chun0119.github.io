@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { speakingEngagements } from '../../config/speaking';
 import './Speaking.css';
 
 const Speaking = () => {
   const webinarDetails = speakingEngagements[0]; // Get the first speaking engagement
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section id="speaking" className="section">

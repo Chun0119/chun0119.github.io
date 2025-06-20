@@ -43,19 +43,6 @@ const AllProjects = () => {
     <div className="all-projects-page">
       <div className="page-header">
         <div className="container">
-          <motion.button
-            className="back-button"
-            onClick={handleBackToHome}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <ArrowLeft size={20} />
-            Back to Home
-          </motion.button>
-          
           <motion.h1
             className="page-title"
             initial={{ opacity: 0, y: 30 }}
