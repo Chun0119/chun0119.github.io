@@ -7,6 +7,9 @@ import tadaScreenshot1 from '../assets/tada-screenshot-1.webp';
 import tadaScreenshot2 from '../assets/tada-screenshot-2.webp';
 import tadaScreenshot3 from '../assets/tada-screenshot-3.webp';
 import tadaScreenshot4 from '../assets/tada-screenshot-4.webp';
+import mxLogo from '../assets/mx.jpg';
+import mxScreenshot1 from '../assets/mx-screenshot-1.png';
+import mxScreenshot2 from '../assets/mx-screenshot-2.png';
 
 export const projects = [
   {
@@ -54,7 +57,7 @@ export const projects = [
         'Developed a scalable live-ops event system and a config exporter tool to enable designers to input content directly from Spreadsheets', 
         'Built internal tools including an in-game debug panel and a player data porting tool to streamline QA and debugging processes', 
         'Created a customer support item granting tool to assist the CS team in resolving player tickets efficiently', 
-        'Optimized Addressables, reducing asset bundle size from 1GB to 500MB, improving load times, memory usage, and download size'
+        'Optimized asset bundle loading, reducing bundle size from 500MB to 150MB, significantly improving load times and memory usage'
       ]
     },
     projectType: 'professional',
@@ -63,6 +66,35 @@ export const projects = [
       tadaScreenshot2,
       tadaScreenshot3,
       tadaScreenshot4,
+    ]
+  },
+  {
+    id: 3,
+    title: 'myVEGAS Slots',
+    description: 'A popular social casino slot game available on mobile and web, where players spin slot machines to earn chips and collect loyalty points redeemable for real-world rewards.',
+    detailedDescription: 'Built with Unity (C#), myVEGAS Slots delivers a feature-rich, live-operated experience with frequent content updates and event-driven gameplay. The game includes slot machines, daily missions, clubs, albums, and dynamic live operations such as events, promotions, and sales.',
+    image: mxLogo,
+    videoUrl: 'https://youtu.be/mGHEUC0JCA0?si=D_dx9LBB162ILweg',
+    technologies: ['Unity', 'C#', 'Lua', 'JavaScript', 'TypeScript', 'Python', '.NET', 'Agile'],
+    tags: ['Unity', 'Mobile', 'Web', 'Game', 'Tool'],
+    live: 'https://www.playstudios.com/myvegas-slots/',
+    featured: true,
+    details: {
+      team: 'PlayStudios Asia',
+      role: 'Associate Frontend Engineer - Unity',
+      features: [
+        'Enhanced core features, such as a level milestone system, and supported live ops with content integrations and sales blockers',
+        'Built Unity editor tools, including an asset pipeline, reducing slot release time from 5 weeks to 2 weeks',
+        'Implemented a scalable in-game cheat panel to streamline QA and developer debugging',
+        'Developed a headless test client in C# (.NET) for automated backend testing and load simulation',
+        'Created tools using Google Colab, Python, and Apps Script to help Product Managers visualize and format live ops content',
+        'Maintained internal tooling including Unity gadgets and a custom VS Code extension',
+      ]
+    },
+    projectType: 'professional',
+    images: [
+      mxScreenshot1,
+      mxScreenshot2,
     ]
   },
 ];
