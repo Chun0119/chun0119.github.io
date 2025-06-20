@@ -1,31 +1,22 @@
+import ggtImage from '../assets/ggt.png';
+
 export const speakingEngagements = [
   {
     id: 1,
-    title: "Web Development Best Practices",
-    organizer: "Tech Innovation Summit",
-    date: "March 15, 2024",
-    time: "2:00 PM EST",
-    duration: "45 minutes",
-    topic: "Modern React Development Patterns",
-    description: "I'll be sharing insights on advanced React patterns, performance optimization techniques, and best practices for building scalable web applications.",
+    title: "Career in STEM",
+    organizer: "Girls Go Tech, The Women's Foundation",
+    date: "Aug 24, 2022",
+    topic: "Programming Games, Programming a Future Career",
+    description: "The session covered industry insights, personal experience, and future opportunities, with a focus on empowering young women to break into tech.",
     keyPoints: [
-      "Advanced React Hooks and Custom Patterns",
-      "Performance Optimization Strategies",
-      "State Management Best Practices",
-      "Testing and Deployment Workflows"
+        'Shared personal journey as a local game developer, showcasing projects and coding experience',
+        'Introduced game development trends including the rise of the Metaverse and NFTs in education and business',
+        'Offered practical advice on building academic paths and launching a career in the gaming industry',
+        'Featured global perspectives, including an interview from Cisco Networking Academy with a female game developer in the U.S.'
     ],
-    registrationLink: "#",
-    isUpcoming: true,
-    type: "webinar",
-    audience: "Developers",
-    platform: "Zoom"
+    isUpcoming: false,
+    image: ggtImage,
+    linkedinPost: "https://www.linkedin.com/embed/feed/update/urn:li:share:6973466380956315648",
+    location: "Hong Kong"
   }
 ];
-
-export const speakingStats = {
-  totalEvents: 1,
-  upcomingEvents: 1,
-  pastEvents: 0,
-  totalAudience: "500+",
-  averageRating: "4.8/5"
-}; 

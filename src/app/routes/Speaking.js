@@ -23,7 +23,7 @@ const Speaking = () => {
         >
           Speaking Engagement
         </motion.h2>
-        
+
         <motion.p
           className="section-subtitle"
           initial={{ opacity: 0, y: 30 }}
@@ -31,7 +31,7 @@ const Speaking = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Sharing knowledge and insights with the developer community
+          Sharing knowledge and insights with the  community
         </motion.p>
 
         <motion.div
@@ -58,19 +58,15 @@ const Speaking = () => {
           <div className="speaking-content">
             <h3 className="webinar-title">{webinarDetails.title}</h3>
             <p className="webinar-organizer">{webinarDetails.organizer}</p>
-            
+
             <div className="webinar-details">
               <div className="detail-item">
                 <span className="detail-icon">📅</span>
                 <span className="detail-text">{webinarDetails.date}</span>
               </div>
               <div className="detail-item">
-                <span className="detail-icon">⏰</span>
-                <span className="detail-text">{webinarDetails.time}</span>
-              </div>
-              <div className="detail-item">
-                <span className="detail-icon">⏱️</span>
-                <span className="detail-text">{webinarDetails.duration}</span>
+                <span className="detail-icon">📍</span>
+                <span className="detail-text">{webinarDetails.location}</span>
               </div>
             </div>
 
@@ -91,28 +87,15 @@ const Speaking = () => {
               </ul>
             </div>
 
-            {webinarDetails.isUpcoming && (
-              <motion.div
-                className="registration-section"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-                viewport={{ once: true }}
-              >
-                <a 
-                  href={webinarDetails.registrationLink} 
-                  className="register-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="button-icon">🎯</span>
-                  Register for Webinar
-                </a>
-                <p className="registration-note">
-                  Free registration • Limited seats available
-                </p>
-              </motion.div>
-            )}
+            {/* LinkedIn post embed */}
+            <div style={{ margin: '2rem 0', textAlign: 'center' }}>
+              <iframe src={webinarDetails.linkedinPost} height="400" width="100%" frameBorder="0" allowFullScreen="" title="LinkedIn Post"></iframe>
+            </div>
+
+            {/* Webinar image */}
+            <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+              <img src={webinarDetails.image} alt="Webinar" style={{ maxWidth: '100%', borderRadius: '12px', border: '1px solid var(--border-primary)' }} />
+            </div>
           </div>
         </motion.div>
       </div>

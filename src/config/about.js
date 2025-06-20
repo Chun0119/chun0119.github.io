@@ -1,22 +1,22 @@
 export const aboutData = {
   title: "About Me",
-  subtitle: "Passionate game developer with expertise in VR/AR, mobile, and PC game development",
+  subtitle: "Passionate game developer with expertise in rapid prototyping and building internal tools",
   
   content: {
     whoIAm: {
       title: "Who I Am",
       paragraphs: [
-        "I'm a dedicated game developer with a passion for creating immersive and engaging gaming experiences. With expertise in Unity and Unreal Engine, I specialize in developing games across multiple platforms including VR, AR, mobile, and PC.",
-        "My journey in game development began with a fascination for interactive storytelling and has evolved into a deep understanding of game mechanics, performance optimization, and user experience design. I believe in creating games that not only entertain but also push the boundaries of what's possible.",
-        "When I'm not coding, you can find me exploring new game development techniques, contributing to open-source projects, or sharing knowledge with the game development community."
+        "I'm a Game Developer with 5 years of experience, creating games, interactive experiences, and tools across XR, mobile, web and PC. Skilled in Unity, Unreal Engine, and various tech stacks, I’ve contributed to both published titles and rapid prototypes in commercial and experimental projects.",
+        "I thrive in fast-paced environments and enjoy solving tough problems. I'm quick to learn new tools, adapt to different stacks, and switch between projects with ease. I specialize in rapid prototyping and building internal tools that streamline workflows and boost team efficiency.",
+        "Above all, I’m passionate about crafting engaging, meaningful experiences—whether for players or teammates. I love pushing creative and technical boundaries, and I’m always looking for new ways to grow and contribute through interactive development."    
       ]
     }
   },
   
   personalInfo: [
-    { icon: 'User', label: 'Name', value: 'S.Y. Chun' },
-    { icon: 'MapPin', label: 'Location', value: 'Your City, Country' },
-    { icon: 'Calendar', label: 'Experience', value: '5+ Years' },
-    { icon: 'Mail', label: 'Email', value: 'your.email@example.com' }
+    { icon: 'User', label: 'Name', value: 'Sarah Chun' },
+    { icon: 'MapPin', label: 'Location', value: 'Richmond, BC, Canada' },
+    { icon: 'Calendar', label: 'Experience', value: '5 Years' },
+    { icon: 'Mail', label: 'Email', value: 'sarah.chun.0119@gmail.com' }
   ]
 }; 
