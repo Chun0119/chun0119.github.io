@@ -48,7 +48,7 @@ export const experiences = [
       'Integrated advanced tech stacks using Unity, Unreal, Decentraland, Spatial, Three.js, and others',
       'Integrated multiplayer, voice chat, and avatar systems using Photon, Agora, and Ready Player Me; implemented Web3 wallet features using thirdweb',
     ],
-    technologies: ['Unity', 'C#', 'Unreal Engine', 'Blueprint', 'VR', 'JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS', 'MongoDb'],
+    technologies: ['Unity', 'C#', 'Unreal Engine', 'Blueprint', 'VR', 'JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS', 'MongoDB'],
     logo: canvaslandLogo
   },
   {
@@ -57,7 +57,7 @@ export const experiences = [
     position: 'Associate Frontend Engineer - Unity',
     location: 'Hong Kong',
     duration: '2021 Oct - 2023 Jun',
-    description: 'Worked on <a href="https://www.playstudios.com/myvegas-slots/" target="_blank" rel="noopener noreferrer">myVEGAS Slots</a>, a top-performing social casino mobile game',
+    description: 'Worked on <a href="https://www.playstudios.com/myvegas-slots/" target="_blank" rel="noopener noreferrer">myVEGAS Slots</a>, a top-performing social casino mobile game with over 10M+ downloads',
     achievements: [
       'Enhanced and expanded core game features, including implementing a new level milestone system',
       'Contributed to live operations events, integrating new slot games, sales blockers, and special event content to drive user engagement',
