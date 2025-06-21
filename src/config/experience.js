@@ -13,7 +13,7 @@ export const experiences = [
     duration: '2023 Oct - Present',
     description: 'Developing mobile games featuring the Neopets IP',
     achievements: [
-      'Contributed to 2 published mobile games: <a href="https://www.neopets.com/talesofdacardia/" target="_blank" rel="noopener noreferrer">Neopets: Tales of Dacardia</a> and <a href="https://www.neopets.com/faeriefragments/" target="_blank" rel="noopener noreferrer">Neopets: Faerie Fragments</a> collectively reaching 100K+ downloads',
+      'Contributed to 2 published mobile games: <a href="https://www.neopets.com/talesofdacardia/" target="_blank" rel="noopener noreferrer">Neopets: Tales of Dacardia</a> and <a href="https://www.neopets.com/faeriefragments/" target="_blank" rel="noopener noreferrer">Neopets: Faerie Fragments</a> with over 100K+ downloads',
       'Developed 5 internal tools to streamline workflows and boost cross-team efficiency',
       'Delivered 2 rapid prototypes for unannounced projects, accelerating early-stage concept validation',
     ],
@@ -28,12 +28,12 @@ export const experiences = [
     duration: '2019 Nov - Present',
     description: 'Specialized in developing educational games and software for children, distributed directly to schools for internal classroom use',
     achievements: [
-      'Developed 10+ educational games and software (including 60+ mini-games) as the sole full-stack developer, supporting 1K+ students',
-      'Integrated various APIs such as ChatGPT and Speech Recognition to enhance interactivity',
-      'Built custom web-based management system for real-time game data tracking, management, and visualization', 
+      'Sole full-stack developer of 10+ educational games and software, including 60+ mini-games used in classrooms by 1K+ students',
+      'Integrated APIs like ChatGPT and Speech Recognition to enrich gameplay interactivity',
+      'Built custom web-based management system for real-time data management and visualization',
       'Created multiple Python scripts to analyze gameplay metrics and user behavior',
     ],
-    technologies: ['Unity', 'C#', 'Android Studio', 'Java', 'Python', 'PHP', 'HTML', 'JavaScript', 'SQL'],
+    technologies: ['Unity', 'C#', 'Android Studio', 'Java', 'JavaScript', 'Python', 'React', 'PHP', 'Firebase', 'AWS', 'MySQL'],
     logo: gabiLogo
   },
   {
@@ -44,12 +44,11 @@ export const experiences = [
     duration: '2022 Aug - 2024 Aug',
     description: 'Delivered custom 3D metaverse solutions for brands and institutions, with immersive experiences across web, desktop, and VR platforms',
     achievements: [
-      'Led full-stack development for 8 metaverse projects, serving clients in banking, education, and hospitality',
-      'Integrated advanced tech stacks across Unity, Unreal, Decentraland, React, Three.js, AWS, and more',
-      'Implemented multiplayer, voice chat, and avatar systems using Photon Fusion, Agora, and Ready Player Me',
-      'Integrated Web3 features, including wallet support with thirdweb',
+      'Led full-stack development of 8 client-facing metaverses across finance, education, and hospitality',
+      'Integrated advanced tech stacks using Unity, Unreal, Decentraland, Spatial, Three.js, and others',
+      'Integrated multiplayer, voice chat, and avatar systems using Photon, Agora, and Ready Player Me; implemented Web3 wallet features using thirdweb',
     ],
-    technologies: ['Unity', 'C#', 'Unreal Engine', 'Blueprint', 'VR', 'JavaScript', 'TypeScript', 'Photon'],
+    technologies: ['Unity', 'C#', 'Unreal Engine', 'Blueprint', 'VR', 'JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS', 'MongoDb'],
     logo: canvaslandLogo
   },
   {
@@ -61,11 +60,11 @@ export const experiences = [
     description: 'Worked on <a href="https://www.playstudios.com/myvegas-slots/" target="_blank" rel="noopener noreferrer">myVEGAS Slots</a>, a top-performing social casino mobile game',
     achievements: [
       'Enhanced and expanded core game features, including implementing a new level milestone system',
-      'Contributed to live operations, integrating new slot games, sales blockers, and special event content to drive user engagement',
-      'Developed 7 internal tools, reducing slot game release cadence from 5 weeks to 2 weeks and improving QA/debugging efficiency',
-      'Created automation tools, including backend testing programs and content conversion scripts, streamlining collaboration with product owners',
+      'Contributed to live operations events, integrating new slot games, sales blockers, and special event content to drive user engagement',
+      'Built 7 internal tools that accelerated slot game releases (from 5 to 2 weeks) and enhanced overall team efficiency',
+      'Built backend testing tools and automated content converters to streamline collaboration with product teams',
     ],
-    technologies: ['Unity', 'C#', 'Lua', 'JavaScript', 'TypeScript', '.NET', 'Python', 'Agile'],
+    technologies: ['Unity', 'C#', 'Lua', 'Python', 'JavaScript', 'TypeScript', '.NET', 'Agile'],
     logo: playstudiosLogo
   },
   {
@@ -77,11 +76,11 @@ export const experiences = [
     description: 'Focused on delivering AR/VR/MR solutions and original game development',
     achievements: [
       'Developed 20 XR applications and games across platforms including VR (4), AR (6), MR (3), and interactive games (7)',
-      'Deployed on diverse devices such as Oculus Quest/Go, HoloLens, Nreal, and standard mobile/PC platforms',
-      'Worked with multiple game engines and SDKs including Unreal Engine (C++), Unity (C#), SparkAR, and JavaScript',
+      'Deployed on diverse devices such as Oculus Quest/Go, HoloLens, Nreal, and standard mobile/PC',
+      'Integrated advanced tech stacks across Unity, Unreal, SparkAR, Arduino',
       'Integrated cloud and spatial services like AWS, Photon, Azure Spatial Anchors, Vivox voice chat, and Kinect/Cubemos body tracking',
     ],
-    technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Unity', 'C#', 'VR', 'AR', 'MR', 'JavaScript'],
+    technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Unity', 'C#', 'SparkAR', 'JavaScript', 'VR', 'AR', 'MR'],
     logo: eteamLogo
   }
 ];
