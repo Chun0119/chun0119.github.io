@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { User, MapPin, Calendar, Mail } from 'lucide-react';
 import { aboutData } from '../../config/about';
@@ -12,11 +12,6 @@ const About = () => {
     Calendar: <Calendar size={20} />,
     Mail: <Mail size={20} />
   };
-
-  // Scroll to top when component mounts
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <section id="about" className="section">

@@ -57,7 +57,7 @@ const Header = () => {
     { path: '/projects', label: 'Projects', sectionId: null },
     { path: '/', label: 'Experience', sectionId: 'experience' },
     { path: '/speaking', label: 'Speaking Engagements', sectionId: null },
-    { path: '/about', label: 'About', sectionId: null },
+    { path: '/', label: 'About', sectionId: 'about' },
     { path: '/', label: 'Contact', sectionId: 'contact' }
   ];
 

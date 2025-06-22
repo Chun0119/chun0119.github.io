@@ -189,7 +189,7 @@ export const projects = [
     image: loveNeighbourhoodLogo,
     videoUrl: 'https://youtu.be/zwLBh8nzBpo',
     technologies: ['Unity', 'C#', 'ARCore', 'Multiplayer', 'Photon', 'Voice Chat'],
-    tags: ['Unity', 'AR', 'Game'],
+    tags: ['Unity', 'AR', 'Mobile', 'Game'],
     live: 'https://eteamxr.com/en/portfolio/love-the-neighbourhood-ar/',
     featured: false,
     details: {
@@ -217,7 +217,7 @@ export const projects = [
     image: aliceLogo,
     videoUrl: 'https://youtu.be/2r7huyDv2Do',
     technologies: ['Unity', 'C#', 'ARCore', 'Multiplayer', 'Photon', 'Voice Chat'],
-    tags: ['Unity', 'AR', 'Game'],
+    tags: ['Unity', 'AR', 'Mobile', 'Game'],
     live: 'https://eteamxr.com/en/portfolio/alice-in-underland-ar/',
     featured: false,
     details: {
