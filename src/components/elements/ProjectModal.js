@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Users, Globe, ExternalLink, Github, Play } from 'lucide-react';
+import { X, Users, Globe, Building, ExternalLink, Github, Play } from 'lucide-react';
 import { getYouTubeEmbedUrl } from '../../config/projects';
 import './ProjectModal.css';
 
@@ -86,6 +86,15 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                         <span className="detail-value">{project.details.role}</span>
                       </div>
                     </div>
+                    {project.details.client && (
+                      <div className="detail-item">
+                        <Building size={20} />
+                        <div>
+                          <span className="detail-label">Client</span>
+                          <span className="detail-value">{project.details.client}</span>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   <div className="modal-features">

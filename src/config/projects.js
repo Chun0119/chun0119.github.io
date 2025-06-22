@@ -22,6 +22,14 @@ import aliceLogo from '../assets/alice.jpg';
 import aliceScreenshot1 from '../assets/alice-screenshot-1.webp';
 import aliceScreenshot2 from '../assets/alice-screenshot-2.webp';
 import aliceScreenshot3 from '../assets/alice-screenshot-3.webp';
+import clpLogo from '../assets/clp.png';
+import clpScreenshot1 from '../assets/clp-screenshot-1.png';
+import clpScreenshot2 from '../assets/clp-screenshot-2.png';
+import clpScreenshot3 from '../assets/clp-screenshot-3.png';
+import tiltBrushLogo from '../assets/tilt-brush.jpg';
+import tiltBrushScreenshot1 from '../assets/tilt-brush-screenshot-1.png';
+import tiltBrushScreenshot2 from '../assets/tilt-brush-screenshot-2.png';
+import tiltBrushScreenshot3 from '../assets/tilt-brush-screenshot-3.png';
 import cyclingLogo from '../assets/cycling.jpg';
 import cyclingScreenshot1 from '../assets/cycling-screenshot-1.jpg';
 
@@ -125,6 +133,7 @@ export const projects = [
     details: {
       team: 'Eteam Entertainment',
       role: 'XR Software Developer',
+      client: 'Tung Wah Group of Hospitals',
       features: [
         'Built core gameplay flow, including character selection lobby, matchmaking room, and game session transitions',
         'Implemented local multiplayer using Unreal Online Subsystem, enabling seamless peer discovery and matchmaking over a local network',
@@ -147,6 +156,7 @@ export const projects = [
     details: {
       team: 'Eteam Entertainment',
       role: 'XR Software Developer',
+      client: 'Road Safety Council',
       features: [
         'Sole developer responsible for the full game implementation in Unreal Engine (Blueprint + C++)',
         'Developed immersive VR interaction systems for commanding AI-controlled vehicles and pedestrians',
@@ -173,6 +183,7 @@ export const projects = [
     details: {
       team: 'Eteam Entertainment',
       role: 'XR Software Developer',
+      client: ' SmarTone',
       features: [
         'Integrated Vivox voice chat for real-time multiplayer communication',
         'Developed AI behavior for both witch and elf roles to support incomplete lobbies',
@@ -195,6 +206,7 @@ export const projects = [
     details: {
       team: 'Eteam Entertainment',
       role: 'XR Software Developer',
+      client: 'The Hong Kong Federation of Youth Groups',
       features: [
         'Developed local network multiplayer using Photon, with a dedicated admin role for real-time game monitoring',
         'Integrated Photon Voice Chat for seamless in-game communication among players',
@@ -223,6 +235,7 @@ export const projects = [
     details: {
       team: 'Eteam Entertainment',
       role: 'XR Software Developer',
+      client: 'The Hong Kong Federation of Youth Groups',
       features: [
         'Developed local network multiplayer using Photon, with a dedicated admin role for real-time game monitoring',
         'Integrated Photon Voice Chat for seamless in-game communication among players',
@@ -238,9 +251,64 @@ export const projects = [
   },
   {
     id: 9,
+    title: 'Natural Gas Terminal MR Visualisation',
+    description: 'An MR experience that supports local multiplayer sessions to explore infrastructure in both full-scale on-site and mini-scale meeting modes.',
+    detailedDescription: 'A HoloLens 2 mixed reality experience built with Unreal Engine that offers two viewing modes: a full-scale visualization for on-site exploration, and a tabletop-scale version for indoor meetings. The experience supports local multiplayer, enabling multiple users to collaboratively view and interact with the infrastructure model using shared AR anchors via Azure Spatial Anchors.',
+    image: clpLogo,
+    videoUrl: 'https://youtu.be/ME9hwpRCIM8',
+    technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Multiplayer', 'Azure Spatial Anchors'],
+    tags: ['Unreal Engine', 'MR', 'Interactive Experience'],
+    live: 'https://eteamxr.com/en/portfolio/clp-natural-gas-terminal-mr-visualisation/',
+    featured: false,
+    details: {
+      team: 'Eteam Entertainment',
+      role: 'XR Software Developer',
+      client: 'CLP Power Hong Kong',
+      features: [
+        'Sole developer responsible for full implementation in Unreal Engine',
+        'Integrated Azure Spatial Anchors for local multiplayer with shared AR alignment',
+        'Implemented intuitive HoloLens 2 interactions using hand gestures and MRTK',
+      ]
+    },
+    projectType: 'professional',
+    images: [
+      clpScreenshot1,
+      clpScreenshot2,
+      clpScreenshot3,
+    ]
+  },
+  {
+    id: 10,
+    title: 'Mixed Reality Art Creation',
+    description: 'A HoloLens 2 mixed reality adaptation of Google Tilt Brush, reimagined for MR input and interaction.',
+    detailedDescription: 'Originally designed as a VR painting tool by Google, Tilt Brush was open-sourced and built in Unity. This project adapts the experience for HoloLens 2, transforming the immersive painting environment for mixed reality. To overcome the limitations of MR hand tracking for complex interactions, a Nintendo Switch controller was integrated to provide precise input and an intuitive user experience.',
+    image: tiltBrushLogo,
+    videoUrl: 'https://youtu.be/5pt7kF8DVJA',
+    technologies: ['Unity', 'C#'],
+    tags: ['Unity', 'MR', 'Interactive Experience'],
+    live: 'https://eteamxr.com/en/portfolio/mixed-reality-art-creation/',
+    featured: false,
+    details: {
+      team: 'Eteam Entertainment',
+      role: 'XR Software Developer',
+      features: [
+        'Adapted the open-source Tilt Brush Unity project for HoloLens 2 with MRTK integration',
+        'Redesigned user interaction to work with a physical controller, replacing VR hand controllers',
+        'Modified existing brush tools and UI to function in an MR spatial environment',
+      ]
+    },
+    projectType: 'professional',
+    images: [
+      tiltBrushScreenshot1,
+      tiltBrushScreenshot2,
+      tiltBrushScreenshot3,
+    ]
+  },
+  {
+    id: 11,
     title: 'HK Cycling VR',
     description: 'An interactive VR cycling experience where players ride a stationary gym bike while wearing a VR headset, pedaling through iconic Hong Kong locations in a virtual tour.',
-    detailedDescription: 'An interactive VR cycling experience built with Unreal, where players ride a stationary gym bike while wearing a VR headset, pedaling through iconic Hong Kong locations. Designed for an HKTDC exhibition, the game highlights Hong Kong’s status as a global financial hub through immersive, activity-based gameplay.',
+    detailedDescription: 'An interactive VR cycling experience built with Unreal Engine, where players ride a stationary gym bike while wearing a VR headset, pedaling through iconic Hong Kong locations. Designed for an HKTDC exhibition, the game highlights Hong Kong’s status as a global financial hub through immersive, activity-based gameplay.',
     image: cyclingLogo,
     videoUrl: 'https://youtu.be/1YiSiqaAjk8',
     technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Arduino'],
