@@ -38,6 +38,14 @@ import hexploreFortScreenshot2 from '../assets/hexplore-fort-screenshot-2.png';
 import hexploreFortScreenshot3 from '../assets/hexplore-fort-screenshot-3.jpg';
 import rayShooterLogo from '../assets/ray-shooter.png';
 import gotchaLogo from '../assets/gotcha.png';
+import roadToGraduationLogo from '../assets/road-to-graduation.png';
+import roadToGraduationScreenshot1 from '../assets/road-to-graduation-screenshot-1.png';
+import roadToGraduationScreenshot2 from '../assets/road-to-graduation-screenshot-2.png';
+import roadToGraduationScreenshot3 from '../assets/road-to-graduation-screenshot-3.png';
+import undeadPursuitLogo from '../assets/undead-pursuit.png';
+import undeadPursuitScreenshot1 from '../assets/undead-pursuit-screenshot-1.png';
+import undeadPursuitScreenshot2 from '../assets/undead-pursuit-screenshot-2.png';
+import undeadPursuitScreenshot3 from '../assets/undead-pursuit-screenshot-3.png';
 
 export const projects = [
   {
@@ -344,6 +352,7 @@ export const projects = [
     technologies: ['Unity', 'C#', 'ARCore', 'Android Studio', 'Java', 'Arduino'],
     tags: ['Unity', 'AR', 'Mobile', 'Game'],
     live: 'https://innoacademy.engg.hku.hk/hexplore-fort/',
+    github: 'https://github.com/Chun0119/AR-Game-with-Hexapod',
     featured: false,
     details: {
       team: 'Personal Final Year Project',
@@ -424,6 +433,64 @@ export const projects = [
         title: 'Exhibitions',
         content: 'Gotcha! was planned to be showcased in a public exhibition, InnoCarnival2018, focused on educational entertainment. The display was set to include interactive gameplay and an informational poster explaining the underlying scientific concepts.'
       }
+    ]
+  },
+  {
+    id: 15,
+    title: 'Road to Graduation',
+    description: 'A university life simulation PC game where players take quizzes, battle distractions, and level up skills to progress through student life.',
+    detailedDescription: 'Built as a team project for a gamification course, Road to Graduation was developed using Unity, to make academic learning more engaging. Players take on the role of university students navigating academic and social challenges. The game uses RPG elements to encourage knowledge retention and strategic decision-making.',
+    image: roadToGraduationLogo,
+    videoUrl: 'https://youtu.be/cCwbUsG7KRA',
+    technologies: ['Unity', 'C#'],
+    tags: ['Unity', 'PC', 'Game'],
+    featured: false,
+    details: {
+      team: 'Group Project of University',
+      role: 'Engineer',
+      features: [
+        'Implemented AI-controlled monsters with auto pathfinding to challenge players in combat',
+        'Developed inventory, equipment, and shop systems to allow item collection, upgrades, and customization',
+        'Added combat skills and upgradable player attributes such as defense and speed for strategic gameplay depth',
+      ]
+    },
+    projectType: 'personal',
+    images: [
+      roadToGraduationScreenshot1,
+      roadToGraduationScreenshot2,
+      roadToGraduationScreenshot3,
+    ],
+    customSections: [
+      {
+        title: 'Future Improvements',
+        content: 'Originally created as a prototype for a gamification course not specifically aimed at Computer Science students, Road to Graduation served primarily as a proof of concept. With further development, the game could expand to include more types of monsters, a larger and more diversified map for players to explore, and knowledge-based questions or NPCs tailored to different academic majors and faculties—creating a more personalized and educational gameplay experience.'
+      }
+    ]
+  },
+  {
+    id: 16,
+    title: 'Undead Pursuit',
+    description: 'My very first 2D PC game, combining exploration, puzzle-solving, and light combat in a haunted setting.',
+    detailedDescription: 'A detective-themed adventure game built using Unity, where players must escape a haunted mansion by uncovering clues, solving puzzles, and battling undead enemies. The game aims to capture the thrill of mystery-solving with a slightly eerie atmosphere, providing an engaging introduction to core gameplay mechanics.',
+    image: undeadPursuitLogo,
+    videoUrl: 'https://youtu.be/-hTw7LRtvzw',
+    technologies: ['Unity', 'C#'],
+    tags: ['Unity', 'PC', 'Game'],
+    featured: false,
+    details: {
+      team: 'Group Project of University',
+      role: 'Engineer',
+      features: [
+        'Implemented an inventory system for collecting and managing key items and clues',
+        'Developed a dialogue interaction system to drive narrative progression',
+        'Built a basic combat mechanic for encounters with undead enemies',
+      ]
+    },
+    projectType: 'personal',
+    images: [
+      undeadPursuitScreenshot1,
+      undeadPursuitScreenshot2,
+      undeadPursuitScreenshot3,
     ]
   },
 ];
