@@ -121,11 +121,15 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                     </div>
                   )}
 
-                  {project.customSection && (
-                    <div className="modal-custom-section">
-                      <h3>{project.customSection.title}</h3>
-                      <p>{project.customSection.content}</p>
-                    </div>
+                  {project.customSections && project.customSections.length > 0 && (
+                    <>
+                      {project.customSections.map((section, index) => (
+                        <div key={index} className="modal-custom-section">
+                          <h3>{section.title}</h3>
+                          <p>{section.content}</p>
+                        </div>
+                      ))}
+                    </>
                   )}
 
                   <div className="modal-technologies">

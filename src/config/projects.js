@@ -32,6 +32,12 @@ import tiltBrushScreenshot2 from '../assets/tilt-brush-screenshot-2.png';
 import tiltBrushScreenshot3 from '../assets/tilt-brush-screenshot-3.png';
 import cyclingLogo from '../assets/cycling.jpg';
 import cyclingScreenshot1 from '../assets/cycling-screenshot-1.jpg';
+import hexploreFortLogo from '../assets/hexplore-fort.png';
+import hexploreFortScreenshot1 from '../assets/hexplore-fort-screenshot-1.png';
+import hexploreFortScreenshot2 from '../assets/hexplore-fort-screenshot-2.png';
+import hexploreFortScreenshot3 from '../assets/hexplore-fort-screenshot-3.jpg';
+import rayShooterLogo from '../assets/ray-shooter.png';
+import gotchaLogo from '../assets/gotcha.png';
 
 export const projects = [
   {
@@ -326,6 +332,98 @@ export const projects = [
     projectType: 'professional',
     images: [
       cyclingScreenshot1,
+    ]
+  },
+  {
+    id: 12,
+    title: 'Hexplore Fort',
+    description: 'A mobile AR RPG that merges physical robotics with virtual gameplay through a 3D-printed Bluetooth-controlled hexapod.',
+    detailedDescription: 'An RPG adventure game that blends physical and digital experiences. Built with Unity and Android Studio, the game features a 3D-printed Arduino-based hexapod robot as the player’s character. Players explore a haunted mansion, battle enemies, and rescue a princess—controlling the robot in real time via a custom Bluetooth interface. The robot replaces traditional game controllers, creating a fully integrated physical-digital gameplay experience.',
+    image: hexploreFortLogo,
+    videoUrl: 'https://youtu.be/x5rA6qc_tv0',
+    technologies: ['Unity', 'C#', 'ARCore', 'Android Studio', 'Java', 'Arduino'],
+    tags: ['Unity', 'AR', 'Mobile', 'Game'],
+    live: 'https://innoacademy.engg.hku.hk/hexplore-fort/',
+    featured: false,
+    details: {
+      team: 'Personal Final Year Project',
+      role: 'Developer & Designer',
+      features: [
+        'Designed and developed the entire game system, including AR visuals, gameplay mechanics, and robot integration',
+        'Implemented AR features using ARCore for plane detection and image recognition',
+        'Converted Android Bluetooth functionality into a Unity Android plugin to control the hexapod in real time',
+        'Replaced Vorpal gamepad with custom in-game robot control, enabling full character control through gameplay',
+      ]
+    },
+    projectType: 'personal',
+    images: [
+      hexploreFortScreenshot1,
+      hexploreFortScreenshot2,
+      hexploreFortScreenshot3,
+    ],
+    customSections: [
+      {
+        title: 'Exhibitions',
+        content: 'The 2nd Engineering InnoShow – Selected for exhibition at HKU\'s Engineering showcase celebrating student innovation in interactive technologies.'
+      },
+      {
+        title: 'Future Improvements',
+        content: 'Hexplore Fort was primarily developed to demonstrate the integration of physical robotics and virtual gameplay, and currently features a single fixed map without progression systems. Inspired by classics like Tower of the Sorcerer, future development could include implementing a level progression system, introducing more diverse enemy types, and adding skill mechanics for both player and enemy characters.'
+      }
+    ]
+  },
+  {
+    id: 13,
+    title: 'Ray Shooter',
+    description: 'A mobile VR shooting game where players defend against alien attacks using only a mirror.',
+    detailedDescription: 'An immersive VR game built using Unity, where players must defend themselves against waves of incoming UFOs using only a mirror. The gameplay revolves around deflecting laser beams or physically smashing UFOs from different directions—front, left, and right. The experience is designed for mobile VR platforms and offers intuitive control using a PlayStation DualShock controller.',
+    image: rayShooterLogo,
+    videoUrl: 'https://youtu.be/-2u9BViMvYI',
+    technologies: ['Unity', 'C#', 'VR'],
+    tags: ['Unity', 'VR', 'Mobile', 'Game'],
+    featured: false,
+    details: {
+      team: 'Versitech',
+      role: 'Internship VR/AR Game Developer',
+      features: [
+        'Integrated Google VR SDK for support on Google Cardboard / VR Box.',
+        'Connected and mapped PlayStation DualShock Wireless Controller via Bluetooth for immersive player input.',
+        'Designed and implemented the complete game mechanics, enemy wave behavior, and visual effects.',
+      ]
+    },
+    projectType: 'professional',
+    customSections: [
+      {
+        title: 'Exhibitions',
+        content: 'Ray Shooter was planned to be showcased in a public exhibition, InnoCarnival2018, focused on educational entertainment. The display was set to include interactive gameplay and an informational poster explaining the underlying scientific concepts.'
+      }
+    ]
+  },
+  {
+    id: 14,
+    title: 'Gotcha!',
+    description: 'A relaxing mobile VR game where players catch butterflies and gently place them on a pond’s surface in a serene, nature-inspired setting.',
+    detailedDescription: 'A relaxing mobile VR game built using Unity. The gameplay revolves around catching butterflies and gently placing them on a pond’s surface. The experience is designed for mobile VR platforms and offers intuitive control using a PlayStation DualShock controller.',
+    image: gotchaLogo,
+    videoUrl: 'https://youtu.be/_4bLDXCVeqI',
+    technologies: ['Unity', 'C#', 'VR'],
+    tags: ['Unity', 'VR', 'Mobile', 'Game'],
+    featured: false,
+    details: {
+      team: 'Versitech',
+      role: 'Internship VR/AR Game Developer',
+      features: [
+        'Integrated Google VR SDK for support on Google Cardboard / VR Box.',
+        'Connected and mapped PlayStation DualShock Wireless Controller via Bluetooth for immersive player input.',
+        'Designed and developed the full gameplay experience',
+      ]
+    },
+    projectType: 'professional',
+    customSections: [
+      {
+        title: 'Exhibitions',
+        content: 'Gotcha! was planned to be showcased in a public exhibition, InnoCarnival2018, focused on educational entertainment. The display was set to include interactive gameplay and an informational poster explaining the underlying scientific concepts.'
+      }
     ]
   },
 ];

@@ -23,7 +23,7 @@ export const experiences = [
   {
     id: 2,
     company: 'Gabi Education',
-    position: 'Software Developer (Freelance)',
+    position: 'Freelance Software Developer',
     location: 'Hong Kong',
     duration: '2019 Nov - Present',
     description: 'Specialized in developing educational games and software for children, distributed directly to schools for internal classroom use',
@@ -39,7 +39,7 @@ export const experiences = [
   {
     id: 3,
     company: 'CanvasLand Metaverse Production',
-    position: 'Game Developer (Freelance)',
+    position: 'Freelance Game Developer',
     location: 'Hong Kong',
     duration: '2022 Aug - 2024 Aug',
     description: 'Delivered custom 3D metaverse solutions for brands and institutions, with immersive experiences across web, desktop, and VR platforms',
@@ -54,7 +54,7 @@ export const experiences = [
   {
     id: 4,
     company: 'PlayStudios Asia',
-    position: 'Associate Frontend Engineer - Unity',
+    position: 'Associate Frontend Engineer (Unity)',
     location: 'Hong Kong',
     duration: '2021 Oct - 2023 Jun',
     description: 'Worked on <a href="https://www.playstudios.com/myvegas-slots/" target="_blank" rel="noopener noreferrer">myVEGAS Slots</a>, a top-performing social casino mobile game with over 10M+ downloads',
