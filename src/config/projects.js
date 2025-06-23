@@ -10,6 +10,9 @@ import tadaScreenshot4 from '../assets/tada-screenshot-4.webp';
 import mxLogo from '../assets/mx.jpg';
 import mxScreenshot1 from '../assets/mx-screenshot-1.png';
 import mxScreenshot2 from '../assets/mx-screenshot-2.png';
+import cvlLogo from '../assets/cvl.png';
+import cvlScreenshot1 from '../assets/cvl-screenshot-1.png';
+import cvlScreenshot2 from '../assets/cvl-screenshot-2.png';
 import mentalHealthLogo from '../assets/mental-health.jpg';
 import roadSafetyLogo from '../assets/road-safety.png';
 import roadSafetyScreenshot1 from '../assets/road-safety-screenshot-1.webp';
@@ -321,6 +324,30 @@ export const projects = [
     ]
   },
   {
+    id: 19,
+    title: 'CanvasLand Metaverse',
+    description: 'A web-based virtual social world for content sharing and multiplayer interaction.',
+    detailedDescription: 'A browser-accessible social experience built using Unity, where users can express themselves by uploading images, videos, and text messages in a shared 3D environment. The project supports real-time multiplayer interactions and voice communication. Customizable avatars are powered by Ready Player Me, creating a more personal and immersive social presence.',
+    image: cvlLogo,
+    technologies: ['Unity', 'C#', 'Multiplayer', 'Voice Chat', 'Ready Player Me'],
+    tags: ['Unity', 'Web', 'Interactive Experience'],
+    featured: false,
+    details: {
+      team: 'CanvasLand Metaverse Production',
+      role: 'Freelance Game Developer',
+      features: [
+        'Built with Photon for real-time multiplayer and Photon Voice Chat integration',
+        'Integrated Ready Player Me for customizable 3D avatars',
+        'Implemented a content-sharing system for uploading and displaying images, videos, and messages',
+      ]
+    },
+    projectType: 'professional',
+    images: [
+      cvlScreenshot1,
+      cvlScreenshot2,
+    ]
+  },
+  {
     id: 11,
     title: 'HK Cycling VR',
     description: 'An interactive VR cycling experience where players ride a stationary gym bike while wearing a VR headset, pedaling through iconic Hong Kong locations in a virtual tour.',
@@ -592,4 +619,16 @@ export const getYouTubeEmbedUrl = (url) => {
   }
   
   return url; // Return original if no pattern matches
+};
+
+// Helper function to convert Instagram post URL to embed format
+export const getInstagramEmbedUrl = (url) => {
+  if (!url) return null;
+  // Instagram post URL: https://www.instagram.com/p/POST_ID/
+  // Embed format: https://www.instagram.com/p/POST_ID/embed
+  const match = url.match(/instagram\.com\/p\/([\w-]+)/);
+  if (match) {
+    return `https://www.instagram.com/p/${match[1]}/embed`;
+  }
+  return url;
 };
