@@ -32,6 +32,8 @@ import tiltBrushScreenshot2 from '../assets/tilt-brush-screenshot-2.png';
 import tiltBrushScreenshot3 from '../assets/tilt-brush-screenshot-3.png';
 import cyclingLogo from '../assets/cycling.jpg';
 import cyclingScreenshot1 from '../assets/cycling-screenshot-1.jpg';
+import paraglidingLogo from '../assets/paragliding.webp';
+import lokyanLogo from '../assets/lokyan.png';
 import hexploreFortLogo from '../assets/hexplore-fort.png';
 import hexploreFortScreenshot1 from '../assets/hexplore-fort-screenshot-1.png';
 import hexploreFortScreenshot2 from '../assets/hexplore-fort-screenshot-2.png';
@@ -332,6 +334,7 @@ export const projects = [
     details: {
       team: 'Eteam Entertainment',
       role: 'XR Software Developer',
+      client: 'The Hong Kong Trade Development Council',
       features: [
         'Integrated Arduino hardware with the VR game, enabling real-time pedaling input from a physical gym bike',
         'Contributed to the core game flow',
@@ -340,6 +343,59 @@ export const projects = [
     projectType: 'professional',
     images: [
       cyclingScreenshot1,
+    ]
+  },
+  {
+    id: 17,
+    title: 'Paragliding in Hong Kong',
+    description: 'A PC-based full-body immersive VR experience where players paraglide through iconic Hong Kong landmarks using body movement.',
+    detailedDescription: 'Built in Unreal Engine and powered by Kinect body tracking, this PC-based paragliding simulation allows players to control their flight direction by shifting their posture. By physically leaning or turning, players glide through a virtual landscape showcasing signature Hong Kong locations, creating a natural and engaging interaction without traditional controllers.',
+    image: paraglidingLogo,
+    videoUrl: 'https://youtu.be/BlshIbICGIk',
+    technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Kinect Body Tracking'],
+    tags: ['Unreal Engine', 'PC', 'Interactive Experience'],
+    live: 'https://eteamxr.com/en/portfolio/paragliding-in-hong-kong/',
+    featured: false,
+    details: {
+      team: 'Eteam Entertainment',
+      role: 'XR Software Developer',
+      client: 'The Hong Kong Trade Development Council',
+      features: [
+        'Developed the full experience in Unreal Engine using Blueprint and C++',
+        'Integrated Kinect body tracking to map real-world posture to in-game flight controls',
+        'Designed intuitive movement logic to simulate realistic paragliding mechanics',
+      ]
+    },
+    projectType: 'professional',
+  },
+  {
+    id: 18,
+    title: 'Interactive and Educational Game',
+    description: 'A collection of five PC-based interactive experiences using Cubemos body tracking for full-body interaction.',
+    detailedDescription: 'This game series explores alternative input methods by leveraging Cubemos body tracking to create motion-controlled gameplay. Each game features unique physical interactions—such as jumping, stretching, or waving—to drive in-game responses. One of the titles integrates iPad support, allowing players to draw on the tablet, with their artwork displayed and animated live on the PC screen.',
+    image: lokyanLogo,
+    videoUrl: 'https://youtu.be/UNiY_yZe2kE',
+    technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Cubemos Body Tracking'],
+    tags: ['Unreal Engine', 'PC', 'Interactive Experience'],
+    live: 'https://eteamxr.com/en/portfolio/interactive-and-educational-game/',
+    featured: false,
+    details: {
+      team: 'Eteam Entertainment',
+      role: 'XR Software Developer',
+      client: 'Caritas Jockey Club Lok Yan School',
+      features: [
+        'Developed five interactive games in Unreal Engine with Cubemos body tracking',
+        'Designed gesture-based gameplay mechanics, encouraging physical engagement',
+        'Implemented iPad-to-PC drawing sync using a custom communication layer for real-time updates',
+        'Handled full development cycle, from input logic to gameplay and UI integration',
+      ]
+    },
+    projectType: 'professional',
+    customSections: [
+      {
+        title: 'More Videos',
+        content: 'View all videos on website: <a href="https://eteamxr.com/en/portfolio/interactive-and-educational-game/" target="_blank" rel="noopener noreferrer">Eteam Portfolio</a>'
+      },
     ]
   },
   {
@@ -444,6 +500,7 @@ export const projects = [
     videoUrl: 'https://youtu.be/cCwbUsG7KRA',
     technologies: ['Unity', 'C#'],
     tags: ['Unity', 'PC', 'Game'],
+    github: 'https://github.com/Chun0119/Road-to-Graduation',
     featured: false,
     details: {
       team: 'Group Project of University',
@@ -476,6 +533,7 @@ export const projects = [
     videoUrl: 'https://youtu.be/-hTw7LRtvzw',
     technologies: ['Unity', 'C#'],
     tags: ['Unity', 'PC', 'Game'],
+    github: 'https://github.com/Chun0119/Undead-Pursuit',
     featured: false,
     details: {
       team: 'Group Project of University',

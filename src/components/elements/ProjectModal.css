@@ -308,6 +308,18 @@
   line-height: 1.6;
 }
 
+.modal-custom-section a {
+  color: var(--text-accent);
+  text-decoration: underline;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+.modal-custom-section a:hover, .modal-custom-section a:focus {
+  color: var(--text-primary);
+  text-decoration: underline wavy;
+  outline: none;
+}
+
 .zoomed-image-overlay {
   position: fixed;
   top: 0;

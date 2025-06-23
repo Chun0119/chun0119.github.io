@@ -126,7 +126,8 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                       {project.customSections.map((section, index) => (
                         <div key={index} className="modal-custom-section">
                           <h3>{section.title}</h3>
-                          <p>{section.content}</p>
+                          {/* Render HTML content for hyperlinks. Ensure content is sanitized if coming from untrusted sources. */}
+                          <div dangerouslySetInnerHTML={{ __html: section.content }} />
                         </div>
                       ))}
                     </>
