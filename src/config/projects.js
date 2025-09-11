@@ -341,7 +341,7 @@ export const projects = [
         'Implemented a content-sharing system for uploading and displaying images, videos, and messages',
       ]
     },
-    projectType: 'professional',
+    projectType: 'Freelance',
     images: [
       cvlScreenshot1,
       cvlScreenshot2,
@@ -483,7 +483,7 @@ export const projects = [
         'Designed and implemented the complete game mechanics, enemy wave behavior, and visual effects.',
       ]
     },
-    projectType: 'professional',
+    projectType: 'Internship',
     customSections: [
       {
         title: 'Exhibitions',
@@ -510,7 +510,7 @@ export const projects = [
         'Designed and developed the full gameplay experience',
       ]
     },
-    projectType: 'professional',
+    projectType: 'Internship',
     customSections: [
       {
         title: 'Exhibitions',

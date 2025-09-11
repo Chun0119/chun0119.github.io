@@ -21,37 +21,6 @@ export const experiences = [
     logo: fluffyDogLogo
   },
   {
-    id: 2,
-    company: 'Gabi Education',
-    position: 'Freelance Software Developer',
-    location: 'Hong Kong',
-    duration: '2019 Nov - Present',
-    description: 'Specialized in developing educational games and software for children, distributed directly to schools for internal classroom use',
-    achievements: [
-      'Sole full-stack developer of 10+ educational games and software, including 60+ mini-games used in classrooms by 1K+ students',
-      'Integrated APIs like ChatGPT and Speech Recognition to enrich gameplay interactivity',
-      'Built custom web-based management system for real-time data management and visualization',
-      'Created multiple Python scripts to analyze gameplay metrics and user behavior',
-    ],
-    technologies: ['Unity', 'C#', 'Android Studio', 'Java', 'JavaScript', 'Python', 'React', 'PHP', 'Firebase', 'AWS', 'MySQL'],
-    logo: gabiLogo
-  },
-  {
-    id: 3,
-    company: 'CanvasLand Metaverse Production',
-    position: 'Freelance Game Developer',
-    location: 'Hong Kong',
-    duration: '2022 Aug - 2024 Aug',
-    description: 'Delivered custom 3D metaverse solutions for brands and institutions, with immersive experiences across web, desktop, and VR platforms',
-    achievements: [
-      'Led full-stack development of 8 client-facing metaverses across finance, education, and hospitality',
-      'Integrated advanced tech stacks using Unity, Unreal, Decentraland, Spatial, Three.js, and others',
-      'Integrated multiplayer, voice chat, and avatar systems using Photon, Agora, and Ready Player Me; implemented Web3 wallet features using thirdweb',
-    ],
-    technologies: ['Unity', 'C#', 'Unreal Engine', 'Blueprint', 'VR', 'JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS', 'MongoDB'],
-    logo: canvaslandLogo
-  },
-  {
     id: 4,
     company: 'PlayStudios Asia',
     position: 'Associate Frontend Engineer (Unity)',
@@ -83,4 +52,38 @@ export const experiences = [
     technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Unity', 'C#', 'SparkAR', 'JavaScript', 'VR', 'AR', 'MR'],
     logo: eteamLogo
   }
+];
+
+export const freelances = [
+  {
+    id: 2,
+    company: 'Gabi Education',
+    position: 'Freelance Software Developer',
+    location: 'Hong Kong',
+    duration: '2019 Nov - Present',
+    description: 'Specialized in developing educational games and software for children, distributed directly to schools for internal classroom use',
+    achievements: [
+      'Sole full-stack developer of 10+ educational games and software, including 60+ mini-games used in classrooms by 1K+ students',
+      'Integrated APIs like ChatGPT and Speech Recognition to enrich gameplay interactivity',
+      'Built custom web-based management system for real-time data management and visualization',
+      'Created multiple Python scripts to analyze gameplay metrics and user behavior',
+    ],
+    technologies: ['Unity', 'C#', 'Android Studio', 'Java', 'JavaScript', 'Python', 'React', 'PHP', 'Firebase', 'AWS', 'MySQL'],
+    logo: gabiLogo
+  },
+  {
+    id: 3,
+    company: 'CanvasLand Metaverse Production',
+    position: 'Freelance Game Developer',
+    location: 'Hong Kong',
+    duration: '2022 Aug - 2024 Aug',
+    description: 'Delivered custom 3D metaverse solutions for brands and institutions, with immersive experiences across web, desktop, and VR platforms',
+    achievements: [
+      'Led full-stack development of 8 client-facing metaverses across finance, education, and hospitality',
+      'Integrated advanced tech stacks using Unity, Unreal, Decentraland, Spatial, Three.js, and others',
+      'Integrated multiplayer, voice chat, and avatar systems using Photon, Agora, and Ready Player Me; implemented Web3 wallet features using thirdweb',
+    ],
+    technologies: ['Unity', 'C#', 'Unreal Engine', 'Blueprint', 'VR', 'JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS', 'MongoDB'],
+    logo: canvaslandLogo
+  },
 ];

@@ -190,6 +190,16 @@
   color: #e65100;
 }
 
+.project-type-tag.Freelance {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.project-type-tag.Internship {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
 @media (max-width: 768px) {
   .project-image {
     height: 180px;

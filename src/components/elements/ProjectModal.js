@@ -38,7 +38,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                   <div className="modal-title-section">
                     <h2>{project.title}</h2>
                     <div className="modal-tags">
-                      <span className={`modal-tag project-type-tag ${project.projectType}`}>{project.projectType === 'personal' ? 'Personal Project' : 'Professional Project'}</span>
+                      <span className={`modal-tag project-type-tag ${project.projectType}`}>{project.projectType === 'personal' ? 'Personal Project' : project.projectType === 'professional' ? 'Professional Project' : project.projectType}</span>
                       {project.tags.map((tag, index) => (
                         <span key={index} className="modal-tag">{tag}</span>
                       ))}

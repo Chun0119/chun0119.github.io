@@ -41,7 +41,7 @@ const ProjectCard = ({
         
         {/* Project Tags */}
         <div className="project-tags">
-          <span className={`project-type-tag ${project.projectType}`}>{project.projectType === 'personal' ? 'Personal Project' : 'Professional Project'}</span>
+          <span className={`project-type-tag ${project.projectType}`}>{project.projectType === 'personal' ? 'Personal Project' : project.projectType === 'professional' ? 'Professional Project' : project.projectType}</span>
           {project.tags.map((tag, tagIndex) => (
             <span key={tagIndex} className="project-tag">
               {tag}

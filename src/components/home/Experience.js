@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { experiences } from '../../config/experience';
+import { experiences, freelances } from '../../config/experience';
 import ExperienceItem from '../elements/ExperienceItem';
 import './Experience.css';
 
@@ -28,8 +27,38 @@ const Experience = () => {
           My professional journey in game development
         </motion.p>
 
+        <motion.p
+          className="experience-subheader"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          Employment
+        </motion.p>
+
         <div className="experience-timeline">
           {experiences.map((experience, index) => (
+            <ExperienceItem 
+              key={experience.id} 
+              experience={experience} 
+              index={index} 
+            />
+          ))}
+        </div>
+
+        <motion.p
+          className="experience-subheader"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          Freelance
+        </motion.p>
+
+        <div className="experience-timeline">
+          {freelances.map((experience, index) => (
             <ExperienceItem 
               key={experience.id} 
               experience={experience} 
