@@ -101,7 +101,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                     <h3>Highlights</h3>
                     <ul>
                       {project.details.features.map((feature, index) => (
-                        <li key={index}>{feature}</li>
+                        <li key={index} dangerouslySetInnerHTML={{ __html: feature }}></li>
                       ))}
                     </ul>
                   </div>

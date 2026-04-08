@@ -221,6 +221,28 @@
   font-weight: bold;
 }
 
+/* Styling for hyperlinks within description */
+.modal-features a {
+  color: var(--text-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.modal-features a:hover {
+  color: var(--text-primary);
+  border-bottom-color: var(--text-accent);
+  text-decoration: none;
+}
+
+.modal-features a:focus {
+  outline: 2px solid var(--text-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+
 .tech-list {
   display: flex;
   flex-wrap: wrap;

@@ -51,8 +51,70 @@ import undeadPursuitLogo from '../assets/undead-pursuit.png';
 import undeadPursuitScreenshot1 from '../assets/undead-pursuit-screenshot-1.png';
 import undeadPursuitScreenshot2 from '../assets/undead-pursuit-screenshot-2.png';
 import undeadPursuitScreenshot3 from '../assets/undead-pursuit-screenshot-3.png';
+import ncaLogo from '../assets/nca.webp';
+import ncaScreenshot1 from '../assets/nca-screenshot-1.webp';
+import ncaScreenshot2 from '../assets/nca-screenshot-2.webp';
+import ncaScreenshot3 from '../assets/nca-screenshot-3.webp';
+import classicLogo from '../assets/classic.png';
+import classicScreenshot1 from '../assets/classic-screenshot-1.png';
+import classicScreenshot2 from '../assets/classic-screenshot-2.png';
+import classicScreenshot3 from '../assets/classic-screenshot-3.png';
 
 export const projects = [
+  {
+    id: 20,
+    title: 'Neopets: Companion App',
+    description: 'A mobile companion experience that lets players stay connected to their Neopets, manage daily activities, and interact with the world of Neopia anytime, anywhere.',
+    detailedDescription: 'A mobile companion app built to modernize and simplify access to key Neopets functionalities. Developed from the ground up, the app focuses on usability, performance, and accessibility, enabling players to manage dailies, track progress, and interact with core systems through a clean and intuitive interface.',
+    image: ncaLogo,
+    technologies: ['Unity', 'C#', 'Agile'],
+    tags: ['Unity', 'Mobile', 'Game'],
+    live: 'https://www.jellyneo.net/?go=comments&post=15743',
+    featured: true,
+    details: {
+      team: 'Fluffy Dog Studio',
+      role: 'Intermediate Game Developer',
+      features: [
+        'Contributed to the development of the app from the ground up, helping shape core systems and user experience from early prototyping stages',
+        'Collaborated on system architecture and technical strategy to ensure scalability, maintainability, and seamless integration with existing Neopets services',
+        'Implemented core features that allow users to complete daily activities and access key site functionality through a streamlined mobile interface',
+        'Worked closely with design and product teams to rapidly prototype and iterate on features for improved usability and player engagement'
+      ]
+    },
+    projectType: 'professional',
+    images: [
+      ncaScreenshot1,
+      ncaScreenshot2,
+      ncaScreenshot3,
+    ]
+  },
+  {
+    id: 21,
+    title: 'Neopets: Classic Website',
+    description: 'A classic virtual pet website where players create, customize, and care for Neopets while exploring a vast world filled with games, quests, stories, and a player-driven economy.',
+    detailedDescription: 'Contributed to the modernization of the Neopets classic website by developing interactive WebGL mini-games and new customization features. Focused on performance, accessibility, and seamless integration with legacy systems, enabling a smoother and more engaging browser-based experience for a large active user base.',
+    image: classicLogo,
+    technologies: ['Unity', 'C#', 'WebGL', 'JavaScript'],
+    tags: ['Unity', 'Web', 'Game'],
+    live: 'https://www.neopets.com/',
+    featured: false,
+    details: {
+      team: 'Fluffy Dog Studio',
+      role: 'Intermediate Game Developer',
+      features: [
+        'Developed and shipped 2 WebGL mini-games: <a href="https://www.neopets.com/games/sakhmet-solitaire-2/" target="_blank" rel="noopener noreferrer">Sakhmet Solitaire II</a> and <a href="https://www.neopets.com/games/kiko/" target="_blank" rel="noopener noreferrer">Kiko Match III</a>',
+        'Built an <a href="https://www.neopets.com/bookshelf/archive-bookshelf.phtml" target="_blank" rel="noopener noreferrer">Archived Bookshelf collection customization</a> feature, enabling users to organize and showcase collected items through an interactive interface',
+        'Integrated Unity WebGL content with existing site systems, ensuring compatibility with legacy infrastructure and user data',
+        'Collaborated with design and product teams to prototype and iterate on features that enhance engagement for 100K+ active users'
+      ]
+    },
+    projectType: 'professional',
+    images: [
+      classicScreenshot1,
+      classicScreenshot2,
+      classicScreenshot3,
+    ]
+  },
   {
     id: 1,
     title: 'Neopets: Faerie Fragments',
@@ -63,7 +125,7 @@ export const projects = [
     technologies: ['Unity', 'C#', 'Lua', 'Agile'],
     tags: ['Unity', 'Mobile', 'Game', 'Tool'],
     live: 'https://www.neopets.com/faeriefragments/',
-    featured: true,
+    featured: false,
     details: {
       team: 'Fluffy Dog Studio',
       role: 'Intermediate Game Developer',

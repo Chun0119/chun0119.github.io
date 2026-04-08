@@ -1,7 +1,7 @@
 export const heroData = {
   title: "Sarah Chun",
   
-  subtitle: "Game Developer with 5 years of Professional Game Industry Experience",
+  subtitle: "Game Developer with 6 years of Professional Game Industry Experience",
   
   description: "Building games, interactive experiences, and tools. Thriving on diverse projects and solving complex problems in fast-paced environments. Passionate about creating robust tools to streamline workflows.",
   
