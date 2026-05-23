@@ -13,7 +13,7 @@ export const experiences = [
     duration: '2023 Oct - Present',
     description: 'Developing mobile and WebGL games featuring the Neopets IP',
     achievements: [
-      'Contributed to the development and release of 3 mobile games: <a href="https://www.neopets.com/talesofdacardia/" target="_blank" rel="noopener noreferrer">Neopets: Tales of Dacardia</a>, <a href="https://www.neopets.com/faeriefragments/" target="_blank" rel="noopener noreferrer">Neopets: Faerie Fragments</a>, and <a href="https://www.jellyneo.net/?go=comments&post=15743" target="_blank" rel="noopener noreferrer">Neopets: Companion App</a> with over 100K+ downloads',
+      'Contributed to the development and release of 3 mobile games: <a href="https://www.neopets.com/talesofdacardia/" target="_blank" rel="noopener noreferrer">Neopets: Tales of Dacardia</a>, <a href="https://www.neopets.com/faeriefragments/" target="_blank" rel="noopener noreferrer">Neopets: Faerie Fragments</a>, and <a href="https://www.jellyneo.net/?go=neopets_companion_app" target="_blank" rel="noopener noreferrer">Neopets: Companion App</a> with over 100K+ downloads',
       'Optimized memory usage and reduced asset sizes by 70%, significantly improving load times and overall application performance',
       'Developed and shipped 3 WebGL mini-games and features for the <a href="https://www.neopets.com/home/" target="_blank" rel="noopener noreferrer">Neopets: Classic Website</a>, serving 100K+ active users',
       'Built 5 internal tools to streamline development workflows and improve cross-team efficiency',

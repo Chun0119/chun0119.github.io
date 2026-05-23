@@ -59,8 +59,48 @@ import classicLogo from '../assets/classic.png';
 import classicScreenshot1 from '../assets/classic-screenshot-1.png';
 import classicScreenshot2 from '../assets/classic-screenshot-2.png';
 import classicScreenshot3 from '../assets/classic-screenshot-3.png';
+import cppArcadeLogo from '../assets/cpp-arcade.png';
+import cppArcadeScreenshot1 from '../assets/cpp-arcade-screenshot-1.png';
+import cppArcadeScreenshot2 from '../assets/cpp-arcade-screenshot-2.png';
+import cppArcadeScreenshot3 from '../assets/cpp-arcade-screenshot-3.png';
+import cppArcadeScreenshot4 from '../assets/cpp-arcade-screenshot-4.png';
 
 export const projects = [
+  {
+    id: 22,
+    title: 'Cpp Arcade',
+    description: 'A pure C++ game development playground featuring multiple classic arcade games built with Raylib and a custom game framework.',
+    detailedDescription: 'Cpp Arcade is a personal project created to learn game development using modern C++ from the ground up. The project currently includes four classic arcade games: Snake, Pong, Space Invaders, and Tetris, developed using Raylib. Through building each game, the project evolved into a reusable framework containing common systems such as game loops, input handling, rendering, collision detection, and scene management. The next stage of development focuses on refactoring these shared components into a scalable Entity Component System (ECS) architecture, providing a foundation for developing larger and more complex games inspired by titles such as Vampire Survivors.',
+    image: cppArcadeLogo,
+    technologies: ['C++', 'Raylib'],
+    tags: ['C++', 'Game'],
+    github: 'https://github.com/Chun0119/Cpp-Arcade',
+    featured: false,
+    details: {
+      team: 'Personal Project',
+      role: 'Developer',
+      features: [
+        'Developed four complete arcade games including Snake, Pong, Space Invaders, and Tetris using modern C++',
+        'Implemented core game systems such as rendering, input handling, collision detection, game state management, and asset loading',
+        'Designed reusable architecture to share common functionality across multiple games within a single project',
+        'Applied object-oriented programming principles and game programming patterns to improve maintainability and scalability',
+        'Planned migration toward an Entity Component System (ECS) architecture to support larger projects and improved performance'
+      ]
+    },
+    projectType: 'personal',
+    images: [
+      cppArcadeScreenshot1,
+      cppArcadeScreenshot2,
+      cppArcadeScreenshot3,
+      cppArcadeScreenshot4,
+    ],
+    customSections: [
+      {
+        title: 'Future Improvements',
+        content: 'The current implementation focuses on learning core game development concepts and establishing reusable systems across multiple arcade games. Future development will involve refactoring the project into a fully component-based ECS framework to improve flexibility, maintainability, and performance. With the new architecture in place, the project will expand beyond small arcade titles toward larger-scale games inspired by Vampire Survivors, featuring dynamic entity management, large numbers of on-screen objects, progression systems, enemy AI, and data-driven gameplay mechanics.'
+      }
+    ]
+  },
   {
     id: 20,
     title: 'Neopets: Companion App',
@@ -69,7 +109,7 @@ export const projects = [
     image: ncaLogo,
     technologies: ['Unity', 'C#', 'Agile'],
     tags: ['Unity', 'Mobile', 'Game'],
-    live: 'https://www.jellyneo.net/?go=comments&post=15743',
+    live: 'https://www.jellyneo.net/?go=neopets_companion_app',
     featured: true,
     details: {
       team: 'Fluffy Dog Studio',
@@ -208,7 +248,7 @@ export const projects = [
     image: mentalHealthLogo,
     videoUrl: 'https://youtu.be/i_dpuBZ2_rQ',
     technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Multiplayer'],
-    tags: ['Unreal Engine', 'VR', 'Game'],
+    tags: ['Unreal Engine', 'C++', 'VR', 'Game'],
     live: 'https://eteamxr.com/en/portfolio/mental-health-emotional-stress-vr/',
     featured: false,
     details: {
@@ -231,7 +271,7 @@ export const projects = [
     image: roadSafetyLogo,
     videoUrl: 'https://youtu.be/zxnvcKwdX4Y',
     technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Multiplayer'],
-    tags: ['Unreal Engine', 'VR', 'Game'],
+    tags: ['Unreal Engine', 'C++', 'VR', 'Game'],
     live: 'https://eteamxr.com/en/portfolio/road-safety-vr-game/',
     featured: false,
     details: {
@@ -254,17 +294,17 @@ export const projects = [
     id: 6,
     title: 'I Got You VR',
     description: 'A networked multiplayer VR survival game where players take on the roles of a witch or elves, combining stealth and strategy in a haunted mansion escape scenario.',
-    detailedDescription: 'A networked multiplayer VR survival game built with Unreal Engine, where one player becomes the witch, tasked with capturing the others—elves—who must work together to explore a haunted mansion, find hidden keys, and unlock the escape door without being caught. The game blends stealth, strategy, and exploration in a tense, immersive VR environment.',
+    detailedDescription: 'A networked multiplayer VR survival game built with Unreal Engine, where one player becomes the witch, tasked with capturing the others—elves, who must work together to explore a haunted mansion, find hidden keys, and unlock the escape door without being caught. The game blends stealth, strategy, and exploration in a tense, immersive VR environment.',
     image: iGotYouLogo,
     videoUrl: 'https://youtu.be/Xc4i59tbHgQ',
     technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Multiplayer', 'Voice Chat', 'AWS GameLift'],
-    tags: ['Unreal Engine', 'VR', 'Game'],
+    tags: ['Unreal Engine', 'C++', 'VR', 'Game'],
     live: 'https://eteamxr.com/en/portfolio/i-got-you-vr/',
     featured: false,
     details: {
       team: 'Eteam Entertainment',
       role: 'XR Software Developer',
-      client: ' SmarTone',
+      client: 'SmarTone',
       features: [
         'Integrated Vivox voice chat for real-time multiplayer communication',
         'Developed AI behavior for both witch and elf roles to support incomplete lobbies',
@@ -277,7 +317,7 @@ export const projects = [
     id: 7,
     title: 'Love the Neighbourhood AR',
     description: 'An AR multiplayer room escape game where up to 8 players collaborate using physical puzzles and AR clues to solve mysteries and rescue missing residents.',
-    detailedDescription: 'An AR multiplayer room escape game built with Unity, supporting up to 8 players. Set in the fictional housing estate, players collaborate to solve puzzles, uncover clues, and rescue missing residents amid a series of mysterious incidents. The game blends real-life escape room elements—such as physical locks and evidence—with AR gameplay to create an immersive, interactive experience.',
+    detailedDescription: 'An AR multiplayer room escape game built with Unity, supporting up to 8 players. Set in the fictional housing estate, players collaborate to solve puzzles, uncover clues, and rescue missing residents amid a series of mysterious incidents. The game blends real-life escape room elements, such as physical locks and evidence, with AR gameplay to create an immersive, interactive experience.',
     image: loveNeighbourhoodLogo,
     videoUrl: 'https://youtu.be/zwLBh8nzBpo',
     technologies: ['Unity', 'C#', 'ARCore', 'Multiplayer', 'Photon', 'Voice Chat'],
@@ -338,7 +378,7 @@ export const projects = [
     image: clpLogo,
     videoUrl: 'https://youtu.be/ME9hwpRCIM8',
     technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Multiplayer', 'Azure Spatial Anchors'],
-    tags: ['Unreal Engine', 'MR', 'Interactive Experience'],
+    tags: ['Unreal Engine', 'C++', 'MR', 'Interactive Experience'],
     live: 'https://eteamxr.com/en/portfolio/clp-natural-gas-terminal-mr-visualisation/',
     featured: false,
     details: {
@@ -417,7 +457,7 @@ export const projects = [
     image: cyclingLogo,
     videoUrl: 'https://youtu.be/1YiSiqaAjk8',
     technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Arduino'],
-    tags: ['Unreal Engine', 'VR', 'Interactive Experience'],
+    tags: ['Unreal Engine', 'C++', 'VR', 'Interactive Experience'],
     live: 'https://eteamxr.com/en/portfolio/hk-cycling-tour-vr/',
     featured: false,
     details: {
@@ -442,7 +482,7 @@ export const projects = [
     image: paraglidingLogo,
     videoUrl: 'https://youtu.be/BlshIbICGIk',
     technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Kinect Body Tracking'],
-    tags: ['Unreal Engine', 'PC', 'Interactive Experience'],
+    tags: ['Unreal Engine', 'C++', 'PC', 'Interactive Experience'],
     live: 'https://eteamxr.com/en/portfolio/paragliding-in-hong-kong/',
     featured: false,
     details: {
@@ -461,11 +501,11 @@ export const projects = [
     id: 18,
     title: 'Interactive and Educational Game',
     description: 'A collection of five PC-based interactive experiences using Cubemos body tracking for full-body interaction.',
-    detailedDescription: 'This game series explores alternative input methods by leveraging Cubemos body tracking to create motion-controlled gameplay. Each game features unique physical interactions—such as jumping, stretching, or waving—to drive in-game responses. One of the titles integrates iPad support, allowing players to draw on the tablet, with their artwork displayed and animated live on the PC screen.',
+    detailedDescription: 'This game series explores alternative input methods by leveraging Cubemos body tracking to create motion-controlled gameplay. Each game features unique physical interactions, such as jumping, stretching, or waving, to drive in-game responses. One of the titles integrates iPad support, allowing players to draw on the tablet, with their artwork displayed and animated live on the PC screen.',
     image: lokyanLogo,
     videoUrl: 'https://youtu.be/UNiY_yZe2kE',
     technologies: ['Unreal Engine', 'C++', 'Blueprint', 'Cubemos Body Tracking'],
-    tags: ['Unreal Engine', 'PC', 'Interactive Experience'],
+    tags: ['Unreal Engine', 'C++', 'PC', 'Interactive Experience'],
     live: 'https://eteamxr.com/en/portfolio/interactive-and-educational-game/',
     featured: false,
     details: {
@@ -491,7 +531,7 @@ export const projects = [
     id: 12,
     title: 'Hexplore Fort',
     description: 'A mobile AR RPG that merges physical robotics with virtual gameplay through a 3D-printed Bluetooth-controlled hexapod.',
-    detailedDescription: 'An RPG adventure game that blends physical and digital experiences. Built with Unity and Android Studio, the game features a 3D-printed Arduino-based hexapod robot as the player’s character. Players explore a haunted mansion, battle enemies, and rescue a princess—controlling the robot in real time via a custom Bluetooth interface. The robot replaces traditional game controllers, creating a fully integrated physical-digital gameplay experience.',
+    detailedDescription: 'An RPG adventure game that blends physical and digital experiences. Built with Unity and Android Studio, the game features a 3D-printed Arduino-based hexapod robot as the player’s character. Players explore a haunted mansion, battle enemies, and rescue a princess, controlling the robot in real time via a custom Bluetooth interface. The robot replaces traditional game controllers, creating a fully integrated physical-digital gameplay experience.',
     image: hexploreFortLogo,
     videoUrl: 'https://youtu.be/x5rA6qc_tv0',
     technologies: ['Unity', 'C#', 'ARCore', 'Android Studio', 'Java', 'Arduino'],
@@ -530,7 +570,7 @@ export const projects = [
     id: 13,
     title: 'Ray Shooter',
     description: 'A mobile VR shooting game where players defend against alien attacks using only a mirror.',
-    detailedDescription: 'An immersive VR game built using Unity, where players must defend themselves against waves of incoming UFOs using only a mirror. The gameplay revolves around deflecting laser beams or physically smashing UFOs from different directions—front, left, and right. The experience is designed for mobile VR platforms and offers intuitive control using a PlayStation DualShock controller.',
+    detailedDescription: 'An immersive VR game built using Unity, where players must defend themselves against waves of incoming UFOs using only a mirror. The gameplay revolves around deflecting laser beams or physically smashing UFOs from different directions: front, left, and right. The experience is designed for mobile VR platforms and offers intuitive control using a PlayStation DualShock controller.',
     image: rayShooterLogo,
     videoUrl: 'https://youtu.be/-2u9BViMvYI',
     technologies: ['Unity', 'C#', 'VR'],
@@ -609,7 +649,7 @@ export const projects = [
     customSections: [
       {
         title: 'Future Improvements',
-        content: 'Originally created as a prototype for a gamification course not specifically aimed at Computer Science students, Road to Graduation served primarily as a proof of concept. With further development, the game could expand to include more types of monsters, a larger and more diversified map for players to explore, and knowledge-based questions or NPCs tailored to different academic majors and faculties—creating a more personalized and educational gameplay experience.'
+        content: 'Originally created as a prototype for a gamification course not specifically aimed at Computer Science students, Road to Graduation served primarily as a proof of concept. With further development, the game could expand to include more types of monsters, a larger and more diversified map for players to explore, and knowledge-based questions or NPCs tailored to different academic majors and faculties, creating a more personalized and educational gameplay experience.'
       }
     ]
   },
