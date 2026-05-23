@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.29b1c3fe.css",
-    "main.js": "/static/js/main.dcfb3489.js",
+    "main.js": "/static/js/main.d33a50c7.js",
     "static/js/453.115f890f.chunk.js": "/static/js/453.115f890f.chunk.js",
     "static/media/hexplore-fort-screenshot-3.jpg": "/static/media/hexplore-fort-screenshot-3.ee8c98a36610c36658f2.jpg",
     "static/media/ff-screenshot-2.webp": "/static/media/ff-screenshot-2.7948cc6783d43f2357dc.webp",
@@ -61,21 +61,23 @@
     "static/media/tilt-brush.jpg": "/static/media/tilt-brush.cba12241576236cca70b.jpg",
     "static/media/mx.jpg": "/static/media/mx.5dada82452e5086bac51.jpg",
     "static/media/road-safety.png": "/static/media/road-safety.7df2b6ab5ead9cfabe63.png",
+    "static/media/cpp-arcade.png": "/static/media/cpp-arcade.8fe2f589903e200f94ef.png",
     "static/media/alice-screenshot-1.webp": "/static/media/alice-screenshot-1.ed511f626721d5cbfe13.webp",
     "static/media/canvasland.png": "/static/media/canvasland.84edfc37ecb5b923e3c4.png",
     "static/media/road-safety-screenshot-1.webp": "/static/media/road-safety-screenshot-1.b7c698fa286791567a5e.webp",
     "static/media/playstudios.png": "/static/media/playstudios.12a04b6bcf48747180b4.png",
     "static/media/nca.webp": "/static/media/nca.6c599e19f20eea8977cc.webp",
+    "static/media/cpp-arcade-screenshot-3.png": "/static/media/cpp-arcade-screenshot-3.0737282610cf7091addf.png",
     "static/media/love-neighbour-screenshot-1.jpg": "/static/media/love-neighbour-screenshot-1.67608ac427183e314616.jpg",
     "static/media/cycling-screenshot-1.jpg": "/static/media/cycling-screenshot-1.85e4acc09aa3ea27c003.jpg",
     "static/media/eteam.webp": "/static/media/eteam.97ac961d44491a527904.webp",
     "index.html": "/index.html",
     "main.29b1c3fe.css.map": "/static/css/main.29b1c3fe.css.map",
-    "main.dcfb3489.js.map": "/static/js/main.dcfb3489.js.map",
+    "main.d33a50c7.js.map": "/static/js/main.d33a50c7.js.map",
     "453.115f890f.chunk.js.map": "/static/js/453.115f890f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29b1c3fe.css",
-    "static/js/main.dcfb3489.js"
+    "static/js/main.d33a50c7.js"
   ]
 }
